@@ -33,6 +33,12 @@ project:
         - file: phase-2-deep-learning/00-overview.md
         - file: phase-2-deep-learning/01-neural-networks-hands-on.md
         - file: phase-2-deep-learning/02-autograd-from-numpy.md
+        - file: phase-2-deep-learning/03-neural-nets-backprop-from-scratch.md
+        - file: phase-2-deep-learning/04-pytorch-in-depth.md
+        - file: phase-2-deep-learning/05-making-training-work.md
+        - file: phase-2-deep-learning/06-convolutional-networks-vision.md
+        - file: phase-2-deep-learning/07-sequence-models.md
+        - file: phase-2-deep-learning/08-transformer-from-scratch.md
 site:
   title: MLForge
   template: book-theme

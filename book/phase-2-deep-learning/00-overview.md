@@ -25,17 +25,21 @@ each used first and then built.
 - **2.2 — From NumPy to a Working Autograd Engine** *(from-scratch · build gate)*
   Build the reverse-mode automatic differentiation engine behind every framework.
 - **2.3 — Neural Nets & Backprop from Scratch** *(from-scratch · build gate)*
-  Extend the engine to tensors; implement a multilayer perceptron, backprop, and SGD in
-  NumPy. *(To be built.)*
+  Extend the idea to tensors; implement a multilayer perceptron, backprop, and SGD in NumPy,
+  trained on MNIST.
 - **2.4 — PyTorch in Depth** *(curated · build gate)*
   From using PyTorch to commanding it; reimplement your from-scratch network and confirm it
-  matches. *(To be built.)*
+  matches.
 - **2.5 — Making Training Work** *(hybrid · ship gate)*
-  Initialization, normalization, optimizers, schedules, and debugging training. *(To be
-  built.)*
-- **2.6 — Convolutional Networks & Vision** *(curated · build gate)* *(To be built.)*
-- **2.7 — Sequence Models** *(curated · concept check)* *(To be built.)*
-- **2.8 — The Transformer from Scratch** *(from-scratch · build gate)* *(To be built.)*
+  Initialization, normalization, optimizers, schedules, regularization, and a method for
+  debugging training.
+- **2.6 — Convolutional Networks & Vision** *(curated · build gate)*
+  Use a pretrained vision model, then build convolution from scratch; transfer learning.
+- **2.7 — Sequence Models** *(curated · concept check)*
+  Recurrent networks, their limits, and the motivation that produced attention.
+- **2.8 — The Transformer from Scratch** *(from-scratch · build gate)*
+  Build self-attention, multi-head attention, and a complete GPT, and train it to generate
+  text.
 
 ## Phase capstone
 
