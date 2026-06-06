@@ -5,6 +5,11 @@
 **Est. effort:** 2–3 hours to build the index; revisited on demand thereafter. The
 foundational track below is open-ended and depends on your starting point.
 
+> Worried about the math? Do not be. This module does not ask you to learn it all now. You
+> build a quick reference, take a short self-check to see where you stand, and, if some
+> areas are rusty, follow the foundational track at your own pace. The curriculum then feeds
+> you each result exactly when a model needs it, so the math always arrives with a purpose.
+
 ## Why this matters
 
 Machine learning rests on a surprisingly small set of mathematical ideas, used over and

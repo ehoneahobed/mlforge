@@ -14,9 +14,10 @@ project:
     - title: "Phase 0 — Foundations & The Autograd Engine"
       children:
         - file: phase-0-foundations/00-overview.md
-        - file: phase-0-foundations/01-autograd-from-numpy.md
+        - file: phase-0-foundations/01-landscape-of-ml.md
         - file: phase-0-foundations/02-ml-engineers-toolkit.md
         - file: phase-0-foundations/03-math-just-in-time.md
+        - file: phase-0-foundations/04-autograd-from-numpy.md
     - title: "Phase 1 — Classical Machine Learning"
       children:
         - file: phase-1-classical-ml/00-overview.md

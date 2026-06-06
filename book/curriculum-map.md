@@ -21,19 +21,24 @@ industry experience. The curriculum is walked one module at a time.
 
 ## Phase 0 — Foundations & The Autograd Engine
 
-*Goal: establish ML-grade tooling and demystify the single abstraction everything else
-stands on, automatic differentiation.*
+*Goal: get oriented in the field, set up a professional workflow, get math-ready, and
+demystify the single abstraction everything else stands on, automatic differentiation. A
+gentle ramp from "curious about ML" to building a real mechanism from scratch.*
 
-- **0.1 — From NumPy to a Working Autograd Engine** *(from-scratch deep-dive · build gate)*
-  Vectorized NumPy, then build a scalar reverse-mode autodiff engine from scratch and use
-  it to train a small neural network. The mechanism behind every deep learning framework.
+- **0.1 — The Landscape of Machine Learning** *(orientation · concept check)*
+  No code. What machine learning is, how AI, ML, deep learning, and LLMs nest, the types of
+  learning, the end-to-end workflow, and what an ML engineer does. The map before the
+  journey.
 - **0.2 — The ML Engineer's Toolkit** *(curated breadth · ship gate)*
-  Reproducible environments, experiment tracking, profiling, and disciplined use of the
-  scientific Python stack. Produces a reusable project template.
+  Reproducible environments, experiment tracking, the scientific Python stack, and training
+  and tracking your first model with a library. Produces a reusable project template.
 - **0.3 — Math, Just-in-Time: The Reference Layer** *(hybrid · concept check)*
   A curated, indexed map of the specific linear algebra, calculus, probability, and
   optimization results the curriculum invokes, plus a foundational track for anyone who
   needs to build the math up first.
+- **0.4 — From NumPy to a Working Autograd Engine** *(from-scratch deep-dive · build gate)*
+  Vectorized NumPy, then build a scalar reverse-mode autodiff engine from scratch and use
+  it to train a small neural network. The mechanism behind every deep learning framework.
 
 **Capstone 0:** a packaged, tested autograd engine whose gradients match a reference
 framework, accompanied by a written derivation of the backward pass of every operation it
@@ -188,6 +193,35 @@ would be proud to present to a hiring committee or a paper reviewer.
 - **The portfolio:** every ship gate produces an artifact. By the end, the portfolio is the
   credential.
 - **Math, just-in-time:** results appear exactly when a model needs them.
+
+---
+
+## How MLForge maps to the roadmap.sh ML roadmap
+
+MLForge is cross-checked against the widely used
+[roadmap.sh Machine Learning roadmap](https://roadmap.sh/machine-learning) so its coverage
+is at least as complete, while going deeper through the from-scratch gates and the research
+phase. The mapping, roughly:
+
+- **Introduction, what ML is, types of ML, the workflow** map to Phase 0, Module 0.1.
+- **Mathematical foundations** (calculus, linear algebra, probability, statistics) are the
+  reference layer in Module 0.3, taught just-in-time across the phases.
+- **Programming and the scientific stack** (Python, NumPy, pandas, Matplotlib) are assumed
+  as a prerequisite and reinforced in Module 0.2. Absolute beginners to Python should learn
+  it first.
+- **Scikit-learn, supervised and unsupervised learning, model evaluation** are Phase 1.
+- **Reinforcement learning** is Phase 5, Module 5.2.
+- **Deep learning** (neural network basics, CNNs, RNNs, attention, transformers) is Phase 2;
+  **autoencoders, GANs, and diffusion** appear in Phases 2 and 3.
+- **NLP, LLMs, and generative models** are Phase 3.
+- **Data collection, data sources, MLOps, and deployment** are Phase 4.
+
+A few roadmap.sh topics are deliberately scoped or folded in rather than given their own
+module: data-source plumbing (SQL and NoSQL databases, APIs) is treated inside Phase 4's
+data engineering rather than as standalone study, and a handful of named items
+(semi-supervised learning, explainable AI, specific NLP preprocessing steps) are introduced
+where they naturally arise rather than as separate modules. These are noted here so the
+coverage is transparent and nothing is lost by omission.
 
 ---
 

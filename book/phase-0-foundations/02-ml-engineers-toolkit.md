@@ -4,6 +4,11 @@
 **Gate:** ship gate
 **Est. effort:** 5–8 focused hours
 
+> New to all this? This module is also where you train and track your very first machine
+> learning model, with a few lines of a library, before you ever build the internals by
+> hand. The goal is a quick, motivating win and a clean workspace, so the harder modules
+> later have somewhere solid to stand.
+
 ## Why this matters
 
 The difference between a research notebook and an engineered ML project lives almost
@@ -27,23 +32,24 @@ By the end of this module you will be able to:
   rerun.
 - Use the scientific Python stack idiomatically rather than fighting it.
 - Profile numerical code to find the real bottleneck before optimizing.
+- Train and track your first machine learning model with a library, end to end.
 - Assemble all of this into a reusable project skeleton.
 
 ## Prerequisites
 
-- [Module 0.1](./01-autograd-from-numpy.md) complete, so you have a small project to
-  package.
+- [Module 0.1](./01-landscape-of-ml.md) complete, so you know what a model and the training
+  workflow are.
 - Working knowledge of Git and the command line.
 
 ## Curated path
 
-Work these in order. Keep it pragmatic: set each tool up, use it on your Module 0.1 engine,
-and move on.
+Work these in order. Keep it pragmatic: set each tool up, use it on the simple model you
+train in the project below, and move on.
 
 1. **Environments and dependencies with `uv`.** `uv` is the current default for Python
    project and environment management: a single fast tool for virtual environments,
    dependency resolution, lockfiles, and Python versions. Read the official guide and
-   create a locked environment for your Module 0.1 project.
+   create a locked environment for this module's project.
    https://docs.astral.sh/uv/
    *When to reach for conda instead:* when you need GPU or CUDA binaries, or non-Python
    system libraries that conda resolves as a unit. For pure-Python ML work, `uv` is faster
@@ -74,8 +80,15 @@ and move on.
    - pandas getting started: https://pandas.pydata.org/docs/getting_started/index.html
    - Matplotlib, the lifecycle of a plot: https://matplotlib.org/stable/tutorials/lifecycle.html
 
-5. **Profiling and debugging numerical code.** Learn to find the slow line with `cProfile`,
-   `%timeit`, or a line profiler *before* optimizing, and to sanity-check tensors for
+5. **Your first model, with scikit-learn.** Before any from-scratch work later, see machine
+   learning actually run. Follow scikit-learn's "An introduction to machine learning" tutorial:
+   load a small dataset, split it into training and test sets, fit a model in a couple of
+   lines, and score it. This is your first end-to-end pass through the workflow from
+   Module 0.1, and it is the model you will wrap in proper tooling in the project below.
+   https://scikit-learn.org/stable/tutorial/basic/tutorial.html
+
+6. **Profiling and debugging numerical code.** Learn to find the slow line with `cProfile`,
+   `%timeit`, or a line profiler *before* optimizing, and to sanity-check arrays for
    shape, dtype, and `NaN` values. This habit saves entire days later.
    https://docs.python.org/3/library/profile.html
 
@@ -97,25 +110,30 @@ run on it.
 5. You profile a training script and one function dominates the runtime. What should you do
    before trying to optimize it?
 
-## Project
+## Project (ship gate)
 
-**Build a reusable project template, and apply it to your Module 0.1 engine.**
+**Train a simple model, and wrap it in a reusable, professional project template.**
 
-Turn the autograd engine from Module 0.1 into a properly engineered project:
+This is your first end-to-end machine learning project. The model itself is deliberately
+simple, because the point of this module is the engineering around it, the template you will
+reuse for every project in the curriculum, including the autograd engine in Module 0.4.
 
-- A `uv`-managed environment with a committed lockfile and a README a stranger can follow
-  from clone, to environment creation, to passing tests, to a reproduced training run.
-- A clean repository layout: a source package, tests, a configuration block or directory,
-  and random seeds that are set and recorded.
-- One experiment tracked end to end: instrument the training loop to log hyperparameters
-  and the loss curve to Weights & Biases or MLflow, and include a screenshot or link in the
-  README.
-- A short `TEMPLATE.md` describing the structure, so you can copy this skeleton for future
-  projects.
+- **Train a model.** Using scikit-learn, train a model on a small built-in dataset (for
+  example, classify irises or predict on the diabetes dataset). Split the data, fit the
+  model, and score it on the held-out test set. A few lines is enough; this is the win that
+  shows you machine learning running end to end.
+- **Wrap it properly.** Put it in a `uv`-managed project with a committed lockfile and a
+  README a stranger can follow from clone, to environment creation, to running the code and
+  reproducing your result. A clean layout: a source module, a test or two, a configuration
+  block, and random seeds that are set and recorded.
+- **Track the run.** Instrument it to log the hyperparameters and the score to Weights &
+  Biases or MLflow, and include a screenshot or link in the README.
+- **Capture the template.** Write a short `TEMPLATE.md` describing the structure, so you can
+  copy this skeleton for every future project.
 
 **Definition of done:** a stranger could clone the repository, build the environment from
-the lockfile, run the tests green, reproduce the training run, and view the tracked
-experiment. That bar, met once here, becomes your default for every project that follows.
+the lockfile, run it, reproduce your model's score, and view the tracked experiment. That
+bar, met once here, becomes your default for every project that follows.
 
 ## Going deeper (optional)
 

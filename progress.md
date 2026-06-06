@@ -11,9 +11,10 @@ Gate legend: ⬜ not started · 🔨 in progress · ✅ passed.
 ---
 
 ## Phase 0 — Foundations & The Autograd Engine
-- ⬜ **0.1** From NumPy to a Working Autograd Engine *(build gate)*
+- ⬜ **0.1** The Landscape of Machine Learning *(concept check)*
 - ⬜ **0.2** The ML Engineer's Toolkit *(ship gate)*
 - ⬜ **0.3** Math, Just-in-Time: The Reference Layer *(concept check)*
+- ⬜ **0.4** From NumPy to a Working Autograd Engine *(build gate)*
 - ⬜ **Capstone 0** — packaged autograd engine + derivation writeup.
 
 ## Phase 1 — Classical Machine Learning

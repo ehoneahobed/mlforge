@@ -1,8 +1,14 @@
-# Module 0.1 — From NumPy to a Working Autograd Engine
+# Module 0.4 — From NumPy to a Working Autograd Engine
 
 **Mode:** from-scratch deep-dive
 **Gate:** build gate
 **Est. effort:** 8–14 focused hours (longer if backpropagation is new, which is fine)
+
+> This is the capstone build of Phase 0, and it is more demanding than the modules before
+> it. That is by design. By now you know what machine learning is, your tools are set up,
+> and your math is warm, so you are ready to build the one mechanism every later phase
+> depends on. If it feels hard, that is the work doing its job, not a sign you are behind.
+> Go slowly and lean on the curated path.
 
 ## Why this matters
 
@@ -33,16 +39,19 @@ By the end of this module you will be able to:
 
 ## Prerequisites
 
+- The earlier Phase 0 modules: [the landscape](./01-landscape-of-ml.md) so you know what a
+  neural network is and why gradients matter, [the toolkit](./02-ml-engineers-toolkit.md)
+  for a working environment and the reusable project template you will build this in, and
+  [the math reference](./03-math-just-in-time.md) for the calculus below.
 - Comfortable Python, including classes and special methods such as `__add__`, and basic
   use of closures.
 - The **chain rule** from single and multivariable calculus. This is the entire
   mathematical content of backpropagation. If it is rusty, the 3Blue1Brown chapter in the
-  path below rebuilds the intuition in about twenty minutes.
-- A Python environment with `numpy`, `matplotlib`, and `torch` installed. PyTorch is used
-  here only to *check* your gradients, never to build them.
-
-If your calculus needs more than a refresher, work through the relevant parts of
-[Module 0.3](./03-math-just-in-time.md) first.
+  path below rebuilds the intuition in about twenty minutes, and
+  [Module 0.3](./03-math-just-in-time.md) has the deeper references.
+- A Python environment with `numpy`, `matplotlib`, and `torch` installed (set up in
+  [Module 0.2](./02-ml-engineers-toolkit.md)). PyTorch is used here only to *check* your
+  gradients, never to build them.
 
 ## Curated path
 
@@ -136,7 +145,7 @@ You pass this module when your engine trains a network and your gradients match 
   decreasing to a good fit.
 
 A starter notebook with the test scaffolding and `TODO` markers is provided alongside this
-lesson: `01-autograd-from-numpy-starter.ipynb`. Fill in the gaps so you can focus on the
+lesson: `04-autograd-from-numpy-starter.ipynb`. Fill in the gaps so you can focus on the
 engine itself.
 
 One rule: **no framework where the point is the mechanism.** PyTorch appears only inside
