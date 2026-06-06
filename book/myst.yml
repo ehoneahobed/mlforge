@@ -1,0 +1,37 @@
+# Jupyter Book v2 (MyST) configuration for MLForge
+# Run locally:  cd book && jupyter book start     (live preview)
+#   or build:   cd book && jupyter book build --html
+version: 1
+project:
+  title: "MLForge — A Project-Based Path to Machine Learning Engineering"
+  authors:
+    - name: MLForge
+  toc:
+    - file: intro.md
+    - title: Start Here
+      children:
+        - file: curriculum-map.md
+    - title: "Phase 0 — Foundations & The Autograd Engine"
+      children:
+        - file: phase-0-foundations/00-overview.md
+        - file: phase-0-foundations/01-autograd-from-numpy.md
+        - file: phase-0-foundations/02-ml-engineers-toolkit.md
+        - file: phase-0-foundations/03-math-just-in-time.md
+    - title: "Phase 1 — Classical Machine Learning"
+      children:
+        - file: phase-1-classical-ml/00-overview.md
+        - file: phase-1-classical-ml/01-the-learning-problem.md
+        - file: phase-1-classical-ml/02-linear-logistic-regression.md
+        - file: phase-1-classical-ml/03-trees-forests-boosting.md
+        - file: phase-1-classical-ml/04-svms-and-kernels.md
+        - file: phase-1-classical-ml/05-unsupervised-clustering-dimensionality.md
+        - file: phase-1-classical-ml/06-evaluation-calibration-leakage.md
+        - file: phase-1-classical-ml/07-feature-engineering.md
+site:
+  title: MLForge
+  template: book-theme
+  options:
+    logo_text: MLForge
+  parts:
+    # Empty string removes the default "Made with MyST" sidebar badge.
+    primary_sidebar_footer: ""
