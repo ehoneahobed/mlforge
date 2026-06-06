@@ -36,7 +36,7 @@ By the end of this module you will be able to:
 
 - [Module 1.2](./02-linear-logistic-regression.md) complete; an SVM is another linear
   classifier, viewed through the lens of margins.
-- From [Module 0.3](../phase-0-foundations/03-math-just-in-time.md): dot products and the
+- From [Module 0.4](../phase-0-foundations/04-math-just-in-time.md): dot products and the
   geometry of vectors (linear algebra), and the idea of constrained optimization
   (optimization).
 

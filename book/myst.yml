@@ -11,13 +11,13 @@ project:
     - title: Start Here
       children:
         - file: curriculum-map.md
-    - title: "Phase 0 — Foundations & The Autograd Engine"
+    - title: "Phase 0 — Getting Started"
       children:
         - file: phase-0-foundations/00-overview.md
         - file: phase-0-foundations/01-landscape-of-ml.md
         - file: phase-0-foundations/02-ml-engineers-toolkit.md
-        - file: phase-0-foundations/03-math-just-in-time.md
-        - file: phase-0-foundations/04-autograd-from-numpy.md
+        - file: phase-0-foundations/03-working-with-data.md
+        - file: phase-0-foundations/04-math-just-in-time.md
     - title: "Phase 1 — Classical Machine Learning"
       children:
         - file: phase-1-classical-ml/00-overview.md
@@ -28,6 +28,11 @@ project:
         - file: phase-1-classical-ml/05-unsupervised-clustering-dimensionality.md
         - file: phase-1-classical-ml/06-evaluation-calibration-leakage.md
         - file: phase-1-classical-ml/07-feature-engineering.md
+    - title: "Phase 2 — Deep Learning"
+      children:
+        - file: phase-2-deep-learning/00-overview.md
+        - file: phase-2-deep-learning/01-neural-networks-hands-on.md
+        - file: phase-2-deep-learning/02-autograd-from-numpy.md
 site:
   title: MLForge
   template: book-theme

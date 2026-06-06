@@ -1,4 +1,4 @@
-# Module 0.3 — Math, Just-in-Time: The Reference Layer
+# Module 0.4 — Math, Just-in-Time: The Reference Layer
 
 **Mode:** hybrid
 **Gate:** concept check

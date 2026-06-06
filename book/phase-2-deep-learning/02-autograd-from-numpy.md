@@ -1,14 +1,14 @@
-# Module 0.4 — From NumPy to a Working Autograd Engine
+# Module 2.2 — From NumPy to a Working Autograd Engine
 
 **Mode:** from-scratch deep-dive
 **Gate:** build gate
 **Est. effort:** 8–14 focused hours (longer if backpropagation is new, which is fine)
 
-> This is the capstone build of Phase 0, and it is more demanding than the modules before
-> it. That is by design. By now you know what machine learning is, your tools are set up,
-> and your math is warm, so you are ready to build the one mechanism every later phase
-> depends on. If it feels hard, that is the work doing its job, not a sign you are behind.
-> Go slowly and lean on the curated path.
+> In the previous module you trained a neural network with PyTorch and watched it learn.
+> Now you build the engine that made it possible. This is the most demanding module so far,
+> and that is by design: you have used a network, so you know exactly what you are building
+> and why. If it feels hard, that is the work doing its job, not a sign you are behind. Go
+> slowly and lean on the curated path.
 
 ## Why this matters
 
@@ -39,19 +39,21 @@ By the end of this module you will be able to:
 
 ## Prerequisites
 
-- The earlier Phase 0 modules: [the landscape](./01-landscape-of-ml.md) so you know what a
-  neural network is and why gradients matter, [the toolkit](./02-ml-engineers-toolkit.md)
-  for a working environment and the reusable project template you will build this in, and
-  [the math reference](./03-math-just-in-time.md) for the calculus below.
+- [Module 2.1](./01-neural-networks-hands-on.md), so you have trained a neural network and
+  seen the pieces (layers, a loss, an optimizer, a training loop) working together. This
+  module builds the machinery underneath what you used there.
+- From Phase 0: [the toolkit](../phase-0-foundations/02-ml-engineers-toolkit.md) for a
+  working environment and the reusable project template, and
+  [the math reference](../phase-0-foundations/04-math-just-in-time.md) for the calculus
+  below.
 - Comfortable Python, including classes and special methods such as `__add__`, and basic
   use of closures.
 - The **chain rule** from single and multivariable calculus. This is the entire
   mathematical content of backpropagation. If it is rusty, the 3Blue1Brown chapter in the
   path below rebuilds the intuition in about twenty minutes, and
-  [Module 0.3](./03-math-just-in-time.md) has the deeper references.
-- A Python environment with `numpy`, `matplotlib`, and `torch` installed (set up in
-  [Module 0.2](./02-ml-engineers-toolkit.md)). PyTorch is used here only to *check* your
-  gradients, never to build them.
+  [Module 0.4](../phase-0-foundations/04-math-just-in-time.md) has the deeper references.
+- A Python environment with `numpy`, `matplotlib`, and `torch` installed. PyTorch is used
+  here only to *check* your gradients, never to build them.
 
 ## Curated path
 
@@ -145,7 +147,7 @@ You pass this module when your engine trains a network and your gradients match 
   decreasing to a good fit.
 
 A starter notebook with the test scaffolding and `TODO` markers is provided alongside this
-lesson: `04-autograd-from-numpy-starter.ipynb`. Fill in the gaps so you can focus on the
+lesson: `02-autograd-from-numpy-starter.ipynb`. Fill in the gaps so you can focus on the
 engine itself.
 
 One rule: **no framework where the point is the mechanism.** PyTorch appears only inside
@@ -164,8 +166,8 @@ Turn the build into a portfolio artifact:
   dataset, the loss curve, and one thing that surprised you or that you got wrong at first.
 
 **Definition of done:** a clean repository, passing tests, a network that visibly learns,
-and the derivation report. This report is also the seed of the Phase 0 capstone; you will
-polish and extend it at the end of the phase.
+and the derivation report. Reuse the project template you built in Phase 0 so this is a
+proper, reproducible project, not a loose notebook.
 
 ## Going deeper (optional)
 

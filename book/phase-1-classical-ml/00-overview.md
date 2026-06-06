@@ -7,15 +7,17 @@ seconds, and is far easier to reason about. More importantly, this is where the 
 core of the field lives: the ideas about generalization, bias and variance, evaluation, and
 data leakage that you will carry into every later phase, neural networks included.
 
-This phase has a dual character. Some modules are from-scratch deep-dives, where you derive
-and implement a method yourself, because the mechanism is foundational. Others are curated
-breadth, where you learn to wield a mature tool and understand its trade-offs. Throughout,
-the emphasis is on the difference between getting a number and getting a number you can
-trust. A model that scores well on a leaky evaluation is worse than no model, because it
-will fail silently in production. Phase 1 teaches you to be suspicious in the right ways.
+Each module follows the curriculum's core rhythm: you use a model first, with scikit-learn,
+to build intuition for what it does, and then, for the foundational ones, you implement it
+from scratch to understand how it works. You arrive having already trained models in
+Phase 0, so the from-scratch builds here land on real, hands-on experience rather than on a
+blank page. Throughout, the emphasis is on the difference between getting a number and
+getting a number you can trust. A model that scores well on a leaky evaluation is worse than
+no model, because it will fail silently in production. Phase 1 teaches you to be suspicious
+in the right ways.
 
 Mathematics begins to carry weight here. Each module links back to the reference layer in
-[Module 0.3](../phase-0-foundations/03-math-just-in-time.md) for the specific results it
+[Module 0.4](../phase-0-foundations/04-math-just-in-time.md) for the specific results it
 uses. If a linked result is unfamiliar, refresh it there before continuing.
 
 ## Modules

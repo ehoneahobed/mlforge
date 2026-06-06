@@ -34,7 +34,7 @@ By the end of this module you will be able to:
 
 - Phase 0 complete, or equivalent comfort with Python and the scientific stack.
 - The probability and statistics entries in
-  [Module 0.3](../phase-0-foundations/03-math-just-in-time.md): expectation, variance, and
+  [Module 0.4](../phase-0-foundations/04-math-just-in-time.md): expectation, variance, and
   the idea of a data-generating distribution.
 
 ## Curated path

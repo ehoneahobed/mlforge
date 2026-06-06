@@ -35,7 +35,7 @@ By the end of this module you will be able to:
 ## Prerequisites
 
 - [Module 1.1](./01-the-learning-problem.md) complete.
-- From [Module 0.3](../phase-0-foundations/03-math-just-in-time.md): the gradient and the
+- From [Module 0.4](../phase-0-foundations/04-math-just-in-time.md): the gradient and the
   multivariable chain rule (calculus), vectors and matrices (linear algebra), and maximum
   likelihood estimation (probability). Refresh these first if needed; this module uses all
   of them directly.

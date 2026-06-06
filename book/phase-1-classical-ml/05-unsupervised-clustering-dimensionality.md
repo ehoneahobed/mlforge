@@ -36,7 +36,7 @@ By the end of this module you will be able to:
 ## Prerequisites
 
 - [Module 1.1](./01-the-learning-problem.md) complete.
-- From [Module 0.3](../phase-0-foundations/03-math-just-in-time.md): eigenvalues and
+- From [Module 0.4](../phase-0-foundations/04-math-just-in-time.md): eigenvalues and
   eigenvectors, covariance, and projections (linear algebra). PCA uses these directly, so
   refresh them first if they are not solid.
 

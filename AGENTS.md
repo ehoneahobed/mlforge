@@ -39,28 +39,37 @@ The Odin Project's real genius is not its writing. It is its **spine**: ruthless
 sequencing of the best existing free material, plus original projects you cannot bluff
 your way through. We copy that, and we add the one thing ML needs that web dev does not.
 
-**The three commitments:**
+**The four commitments:**
 
-1. **Curate, don't rewrite.** The world already has fast.ai, CS231n, CS229, *Dive into
+1. **Experience it, then build it.** Lead with using a technique (via a library, seeing it
+   work, building intuition), then implement it from scratch. A learner earns the right to
+   build something by first understanding what it is for. This ordering is the source of
+   accessibility: never ask someone to build a mechanism they have not yet used. The very
+   first project a learner ships is a model trained with a library, not a neural network
+   assembled from nothing. Accessible entry, expert ceiling, in that order.
+
+2. **Curate, don't rewrite.** The world already has fast.ai, CS231n, CS229, *Dive into
    Deep Learning*, 3Blue1Brown, the *Deep Learning* book, and the original papers. We
    link the best of it with surgical precision (specific lectures, chapters, sections),
    and we own the connective tissue: *why this, why now, what to ignore.*
 
-2. **Understanding is proven by building, not by watching.** ML's unique trap: you can
+3. **Understanding is proven by building, not by watching.** ML's unique trap: you can
    finish a course and still not understand backprop, because the framework hid it. So
-   every load-bearing concept has a **from-scratch reimplementation** gate. You don't
-   advance past attention until you've written attention in NumPy. You don't advance past
-   gradient descent until your own autograd engine trains a net.
+   every load-bearing concept has a **from-scratch reimplementation** gate, which comes
+   *after* the learner has used the technique. You don't advance past attention until
+   you've written attention in NumPy. You don't advance past gradient descent until your
+   own autograd engine trains a net.
 
-3. **Everything ships.** Industry capability is not theoretical. Projects are not
+4. **Everything ships.** Industry capability is not theoretical. Projects are not
    exercises; they are artifacts: tested code, a written report, a deployed endpoint, a
    reproduced result. The portfolio *is* the curriculum's output.
 
-**The central tension we deliberately hold:** *use-it* vs *build-it-from-scratch.* Pure
-curation produces people who can use tools but panic when they break. Pure from-scratch
-is slow and reinvents wheels. MLForge alternates: curated breadth to move fast, then a
-from-scratch deep-dive on the concepts where not understanding the internals will someday
-cost you. Every module declares which mode it is in.
+**The central tension we deliberately resolve:** *use-it* vs *build-it-from-scratch.* Pure
+curation produces people who can use tools but panic when they break. Pure from-scratch is
+slow, reinvents wheels, and is a miserable way to begin. MLForge does both, in a fixed
+order: use it first to build intuition and comfort, then build it from scratch to earn
+mastery. The accessible entry and the expert ceiling are the same path walked in the right
+sequence. Every module declares which mode it is in and never opens with a cold build.
 
 ---
 

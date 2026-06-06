@@ -10,12 +10,12 @@ Gate legend: ⬜ not started · 🔨 in progress · ✅ passed.
 
 ---
 
-## Phase 0 — Foundations & The Autograd Engine
+## Phase 0 — Getting Started
 - ⬜ **0.1** The Landscape of Machine Learning *(concept check)*
-- ⬜ **0.2** The ML Engineer's Toolkit *(ship gate)*
-- ⬜ **0.3** Math, Just-in-Time: The Reference Layer *(concept check)*
-- ⬜ **0.4** From NumPy to a Working Autograd Engine *(build gate)*
-- ⬜ **Capstone 0** — packaged autograd engine + derivation writeup.
+- ⬜ **0.2** The ML Engineer's Toolkit & Your First Model *(ship gate)*
+- ⬜ **0.3** Working with Data *(ship gate)*
+- ⬜ **0.4** Math, Just-in-Time: The Reference Layer *(concept check)*
+- ⬜ **Capstone 0** — end-to-end scikit-learn project on a real dataset.
 
 ## Phase 1 — Classical Machine Learning
 - ⬜ **1.1** The Learning Problem *(concept check)*
@@ -28,12 +28,14 @@ Gate legend: ⬜ not started · 🔨 in progress · ✅ passed.
 - ⬜ **Capstone 1** — end-to-end classical ML on a real tabular dataset.
 
 ## Phase 2 — Deep Learning
-- ⬜ **2.1** Neural Nets & Backprop from Scratch *(build gate)*
-- ⬜ **2.2** PyTorch Mastery *(build gate)*
-- ⬜ **2.3** Making Training Work *(ship gate)*
-- ⬜ **2.4** Convolutional Networks & Vision *(build gate)*
-- ⬜ **2.5** Sequence Models *(concept check)*
-- ⬜ **2.6** The Transformer from Scratch *(build gate)*
+- ⬜ **2.1** Neural Networks, Hands-On *(ship gate)*
+- ⬜ **2.2** From NumPy to a Working Autograd Engine *(build gate)*
+- ⬜ **2.3** Neural Nets & Backprop from Scratch *(build gate)*
+- ⬜ **2.4** PyTorch in Depth *(build gate)*
+- ⬜ **2.5** Making Training Work *(ship gate)*
+- ⬜ **2.6** Convolutional Networks & Vision *(build gate)*
+- ⬜ **2.7** Sequence Models *(concept check)*
+- ⬜ **2.8** The Transformer from Scratch *(build gate)*
 - ⬜ **Capstone 2** — reproduce a published result.
 
 ## Phase 3 — Modern ML: LLMs & Generative Models

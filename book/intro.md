@@ -45,9 +45,9 @@ and there are three kinds, used in increasing severity:
 
 - **Concept checks.** Short questions you answer without notes. They catch passive
   watching, the failure mode where a video feels clear but nothing stuck.
-- **Build gates.** You reimplement the mechanism from scratch and make it pass tests. You
-  do not advance past attention until you have written attention yourself. You do not
-  advance past gradient descent until your own code trains a network.
+- **Build gates.** After you have used a mechanism, you reimplement it from scratch and make
+  it pass tests. You do not advance past attention until you have written attention yourself.
+  You do not advance past gradient descent until your own code trains a network.
 - **Ship gates.** You deliver a real, tested, documented artifact: working code, a written
   report, a deployed service, a reproduced result. Every module has at least one, and
   every phase ends in a capstone.
@@ -56,22 +56,29 @@ Progression is **gated, not timed.** You advance when the gate is green, however
 takes. The gates are the entire point. Done honestly, this is a multi-year body of work,
 which is the correct timescale for genuine expertise. You walk it one module at a time.
 
-## The three commitments
+## The four commitments
 
-Everything in MLForge follows three rules:
+Everything in MLForge follows four rules:
 
-1. **Curate, don't rewrite.** The world already has extraordinary free material: top
+1. **Experience it, then build it.** You always use a technique first, with a library,
+   seeing it work and building intuition, before you implement it from scratch. You earn the
+   right to build something by first understanding what it is for. This is why the very first
+   thing you do is train a real model in a few lines, not assemble a neural network from
+   nothing. Accessible entry, expert ceiling, in that order.
+
+2. **Curate, don't rewrite.** The world already has extraordinary free material: top
    university courses, the best textbooks, definitive explainer videos, and the original
    research papers. MLForge links the best of it with surgical precision, pointing you to
    exact lectures, chapters, and sections, and tells you what to skip. The original writing
    here is the connective tissue: why each thing matters, how the pieces fit, and the
    project specifications.
 
-2. **Understanding is proven by building.** Every load-bearing concept has a from-scratch
-   reimplementation. This is what separates someone who can use a framework from someone
-   who can debug it, extend it, and reason about it when it breaks.
+3. **Understanding is proven by building.** After you have used a load-bearing concept, you
+   reimplement it from scratch. This is what separates someone who can use a framework from
+   someone who can debug it, extend it, and reason about it when it breaks. The using comes
+   first; the building is how you prove it really landed.
 
-3. **Everything ships.** Projects are not exercises, they are artifacts. By the end of the
+4. **Everything ships.** Projects are not exercises, they are artifacts. By the end of the
    curriculum, the portfolio you have built *is* your credential.
 
 ## Each module follows the same shape
