@@ -39,6 +39,14 @@ project:
         - file: phase-2-deep-learning/06-convolutional-networks-vision.md
         - file: phase-2-deep-learning/07-sequence-models.md
         - file: phase-2-deep-learning/08-transformer-from-scratch.md
+    - title: "Phase 3 — Modern ML: LLMs & Generative Models"
+      children:
+        - file: phase-3-modern-ml/00-overview.md
+        - file: phase-3-modern-ml/01-inside-large-language-models.md
+        - file: phase-3-modern-ml/02-fine-tuning-adaptation.md
+        - file: phase-3-modern-ml/03-embeddings-retrieval-rag.md
+        - file: phase-3-modern-ml/04-diffusion-generative-models.md
+        - file: phase-3-modern-ml/05-evaluating-generative-systems.md
 site:
   title: MLForge
   template: book-theme
