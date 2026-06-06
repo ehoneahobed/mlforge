@@ -1,10 +1,10 @@
-# Modelwright
+# The Modelwright Project
 
 **An open, project-based curriculum for becoming a Machine Learning Engineer.**
 
 **Read the book: https://ehoneahobed.github.io/modelwright**
 
-Modelwright is a free, self-directed path through machine learning, from foundations to
+The Modelwright Project (Modelwright for short) is a free, self-directed path through machine learning, from foundations to
 research-grade and production-grade work. It is inspired by The Odin Project: rather than
 rewriting the world's best courses, books, and papers, it sequences them with precision and
 surrounds them with projects you cannot fake your way through. Where it differs is its

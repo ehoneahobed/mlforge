@@ -1,6 +1,7 @@
 # AGENTS.md — The Constitution of *Modelwright*
 
-> **Modelwright** is a self-directed, project-driven curriculum for becoming a Machine
+> **The Modelwright Project** ("Modelwright" for short; use the full name wherever the name
+> travels alone, the shorthand in casual prose) is a self-directed, project-driven curriculum for becoming a Machine
 > Learning Engineer with the depth of someone who completed a research degree (MSc/PhD)
 > **and** the practical judgment of someone who has shipped ML systems in industry.
 >

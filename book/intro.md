@@ -1,8 +1,8 @@
-# Modelwright
+# The Modelwright Project
 
 **An open, project-based path to becoming a Machine Learning Engineer.**
 
-Modelwright is a free, self-directed curriculum for people who want to learn machine
+The Modelwright Project (Modelwright for short) is a free, self-directed curriculum for people who want to learn machine
 learning seriously, all the way from foundations to research-grade and production-grade
 work. It is built on a simple belief: you do not learn machine learning by watching it,
 you learn it by building it. Every concept here is earned by writing code, reimplementing

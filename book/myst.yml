@@ -3,7 +3,7 @@
 #   or build:   cd book && jupyter book build --html
 version: 1
 project:
-  title: "Modelwright — A Project-Based Path to Machine Learning Engineering"
+  title: "The Modelwright Project — An Open Curriculum for Machine Learning Engineering"
   authors:
     - name: Modelwright
   toc:
@@ -63,10 +63,10 @@ project:
         - file: phase-5-specialization-research/03-chosen-specialization.md
         - file: phase-5-specialization-research/04-original-work.md
 site:
-  title: Modelwright
+  title: The Modelwright Project
   template: book-theme
   options:
-    logo_text: Modelwright
+    logo_text: The Modelwright Project
   parts:
     # Empty string removes the default "Made with MyST" sidebar badge.
     primary_sidebar_footer: ""
