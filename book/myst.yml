@@ -47,6 +47,14 @@ project:
         - file: phase-3-modern-ml/03-embeddings-retrieval-rag.md
         - file: phase-3-modern-ml/04-diffusion-generative-models.md
         - file: phase-3-modern-ml/05-evaluating-generative-systems.md
+    - title: "Phase 4 — ML Systems & MLOps"
+      children:
+        - file: phase-4-ml-systems-mlops/00-overview.md
+        - file: phase-4-ml-systems-mlops/01-data-engineering-for-ml.md
+        - file: phase-4-ml-systems-mlops/02-training-at-scale.md
+        - file: phase-4-ml-systems-mlops/03-serving-inference-optimization.md
+        - file: phase-4-ml-systems-mlops/04-production-lifecycle.md
+        - file: phase-4-ml-systems-mlops/05-ml-system-design.md
 site:
   title: MLForge
   template: book-theme
