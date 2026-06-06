@@ -2,8 +2,7 @@
 
 Phase 0 is the on-ramp, and it is built to be genuinely welcoming. By the end of it you will
 have trained, evaluated, and understood real machine learning models, set up a professional
-workflow, and learned to handle data. There are no neural networks here and nothing built
-from scratch. This phase is about experiencing machine learning and getting comfortable with
+workflow, and learned to handle data. This phase is about experiencing machine learning and getting comfortable with
 it, so that the deeper phases have solid ground to stand on.
 
 That ordering is deliberate. You start with the map of the field, no code at all. Then you

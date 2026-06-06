@@ -48,10 +48,16 @@ your way through. We copy that, and we add the one thing ML needs that web dev d
    first project a learner ships is a model trained with a library, not a neural network
    assembled from nothing. Accessible entry, expert ceiling, in that order.
 
-2. **Curate, don't rewrite.** The world already has fast.ai, CS231n, CS229, *Dive into
-   Deep Learning*, 3Blue1Brown, the *Deep Learning* book, and the original papers. We
-   link the best of it with surgical precision (specific lectures, chapters, sections),
-   and we own the connective tissue: *why this, why now, what to ignore.*
+2. **Curate for concepts, teach inline for tools.** For *conceptual depth* (the math, model
+   theory, the papers), the world already has fast.ai, CS231n, CS229, *Dive into Deep
+   Learning*, 3Blue1Brown, the *Deep Learning* book, and the originals. Link the best of it
+   with surgical precision (specific lectures, chapters, sections) and own the connective
+   tissue: *why this, why now, what to ignore.* But for *tools and practical machinery*
+   (uv, Weights & Biases, git workflows, pandas idioms, framework setup), do NOT send the
+   learner to read an entire documentation site. Write a tight inline primer: the small
+   subset they will actually use, the mental model, and real commands or a worked snippet,
+   with the official docs linked only as a "go deeper" reference. Making someone mine full
+   docs for the 20% they need is the friction this curriculum exists to remove.
 
 3. **Understanding is proven by building, not by watching.** ML's unique trap: you can
    finish a course and still not understand backprop, because the framework hid it. So
@@ -114,9 +120,13 @@ this, say why they can't. Connect to what's next.
 ## Prerequisites
 Exact prior modules + the specific math results invoked (linked, just-in-time).
 
-## Curated path (the spine)
-An ORDERED list. Each item: source, the EXACT scope (lecture N / chapter N / §N), why
-it's here, and what to deliberately skip. Quality over volume. 3–6 items, not 20.
+## Curated path (the spine) — OR inline primers for tools
+For CONCEPTUAL material: an ORDERED list. Each item: source, the EXACT scope (lecture N /
+chapter N / §N), why it's here, and what to deliberately skip. Quality over volume, 3–6
+items, not 20. For TOOLS and practical machinery (uv, W&B, git, pandas idioms, framework
+setup): do not just link docs. Write a tight inline primer with the mental model, the
+commands or snippet the learner will actually use, and the official docs only as a "go
+deeper" link. See Module 0.2 for the pattern.
 
 ## Concept checks
 5–10 questions answerable without notes. The honest test of "did it land."
