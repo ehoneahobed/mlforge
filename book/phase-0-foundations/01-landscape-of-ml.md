@@ -189,6 +189,50 @@ A short writing-and-thinking project. No code required.
 self-placement paragraph. Keep it; it is a useful thing to look back on as the field stops
 feeling foreign.
 
+## The workshop: start your learning log
+
+Do not just write the project in a local file and move on. Put it on GitHub today. Shipping
+something on day one builds the habit that makes everything in this curriculum real, and it
+starts the public portfolio that will eventually be your credential. Follow these steps, do
+not just read them.
+
+You will create one repository, `mlforge-learning-log`, that holds all your *written* work
+across the whole curriculum (writeups, concept-check reflections, your reading log). Your
+build projects later will each get their own repository; this one is for words.
+
+**1. Create the repository.** With the GitHub CLI:
+
+```bash
+gh repo create mlforge-learning-log --public --clone
+cd mlforge-learning-log
+```
+
+No `gh`? Create an empty public repository named `mlforge-learning-log` on github.com (do
+not add a README), then `git clone <its-url>` and `cd` into it.
+
+**2. Add your writeup.** Create a file `phase-0/01-landscape.md` and write the three pieces
+of the project above into it: your one-page map, your five-product classification, and your
+self-placement paragraph.
+
+**3. Add a README** so the repo explains itself:
+
+```bash
+echo "# MLForge Learning Log" > README.md
+echo "My written work as I go through the MLForge curriculum." >> README.md
+```
+
+**4. Commit and push:**
+
+```bash
+git add -A
+git commit -m "Module 0.1: the landscape of machine learning"
+git push
+```
+
+**Done when:** `mlforge-learning-log` is live on your GitHub with your writeup visible in the
+`phase-0/` folder. From now on, every written deliverable and concept-check reflection goes
+here, building a record of your thinking across the journey.
+
 ## Going deeper (optional)
 
 - Andrew Ng's **Machine Learning Specialization** (Coursera, free to audit) is the classic

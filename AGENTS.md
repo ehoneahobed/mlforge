@@ -138,6 +138,18 @@ must pass. No framework allowed where the point is the mechanism.
 ## Project / Ship gate
 The artifact to deliver: what to build, the definition of done, and the writeup prompt.
 
+## The workshop (apprentice walkthrough) — REQUIRED for hands-on modules, especially early ones
+Do not just describe the project; walk the apprentice through building and shipping it, step
+by step, so they follow along and build rather than read. Include: a specific GitHub repo
+name, the exact terminal commands to create the repo and set up the environment, ordered
+checkpoints saying what to write and when to commit, and a final "done when it's on GitHub"
+where the pushed repo is the artifact. Naming convention: written deliverables (writeups,
+concept-check reflections, the reading log) go in one `mlforge-learning-log` repo, created in
+Module 0.1; each build or ship project gets its own `mlforge-<topic>` repo so it stands alone
+as a portfolio piece. Give a code scaffold with the structure and a few TODOs rather than a
+complete copy-paste solution: the apprentice must write the substance. As modules get more
+advanced, the workshop hand-holding tapers; early modules hold the hand tightly.
+
 ## Going deeper (optional)
 Papers, harder resources, rabbit holes for the curious. Clearly marked optional.
 

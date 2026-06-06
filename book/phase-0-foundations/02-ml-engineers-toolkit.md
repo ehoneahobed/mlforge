@@ -233,6 +233,102 @@ reuse for every project in the curriculum, including the autograd engine later.
 the lockfile, run it, reproduce your model's score, and view the tracked experiment. That
 bar, met once here, becomes your default for every project that follows.
 
+## The workshop: build it and ship it
+
+Follow these steps in order, in your terminal, building as you go. Do not read ahead and
+skip; the point is to do it. By the end you will have a real, reproducible project on GitHub
+that becomes the template for everything you build later. This project lives in its own
+repository, `mlforge-first-model`.
+
+**1. Create the project.** `uv init` sets up a project folder, a `pyproject.toml`, a
+`.gitignore`, and a git repository all at once:
+
+```bash
+mkdir mlforge-first-model && cd mlforge-first-model
+uv init
+uv add scikit-learn pandas matplotlib wandb
+mkdir src
+```
+
+**2. Write the training script.** Create `src/train.py` from this scaffold and fill in the
+`TODO`s yourself. The structure is the lesson; the substance is your work:
+
+```python
+import random
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+import wandb
+
+SEED = 0
+CONFIG = {"n_estimators": 100, "max_depth": None, "test_size": 0.2}
+
+def set_seeds(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+
+def main():
+    set_seeds(SEED)
+    wandb.init(project="mlforge-first-model", config=CONFIG)
+
+    X, y = load_iris(return_X_y=True)
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=CONFIG["test_size"], random_state=SEED)
+
+    # TODO: create the model using the values in CONFIG
+    model = RandomForestClassifier(...)
+    model.fit(X_train, y_train)
+
+    # TODO: score the model on the test set and log it
+    accuracy = ...
+    wandb.log({"test_accuracy": accuracy})
+    print(f"Test accuracy: {accuracy:.3f}")
+    wandb.finish()
+
+if __name__ == "__main__":
+    main()
+```
+
+**3. Checkpoint one, get it running and commit.** Log in to Weights & Biases once
+(`wandb login`), then run and commit:
+
+```bash
+wandb login          # one-time, free account
+uv run python src/train.py    # should print a test accuracy and create a W&B run
+git add -A && git commit -m "Train and score a first model, tracked with W&B"
+```
+
+**4. Make it reproducible and documented.** Write a `README.md` that a stranger could
+follow: what the project does, and the exact commands to recreate the environment
+(`uv sync`) and run it (`uv run python src/train.py`). Add a screenshot or link to your
+W&B run. Then commit:
+
+```bash
+git add -A && git commit -m "Add README with setup and results"
+```
+
+**5. Capture the template.** Write a short `TEMPLATE.md` describing the structure (where
+code goes, where config lives, how seeds and tracking are handled), so you can copy this
+skeleton for future projects. Commit it.
+
+```bash
+git add -A && git commit -m "Add reusable project template notes"
+```
+
+**6. Ship it to GitHub:**
+
+```bash
+gh repo create mlforge-first-model --public --source=. --push
+```
+
+No `gh`? Create an empty public repo named `mlforge-first-model` on github.com, then:
+`git remote add origin <its-url>` and `git push -u origin main`.
+
+**Done when:** `mlforge-first-model` is on your GitHub, and a stranger could clone it, run
+`uv sync`, run the script, reproduce your accuracy, and find your tracked run. You now own a
+template you will reuse for the rest of the curriculum.
+
 ## Going deeper (optional)
 
 - Add a `Makefile` or `justfile` with `setup`, `test`, and `train` targets so common tasks

@@ -37,6 +37,8 @@ for. You will never be asked to build a mechanism you have not already used.
 clean it, train and compare a couple of scikit-learn models, evaluate them honestly on data
 they have not seen, and write up what you found. No internals required. This is your first
 real result from start to finish, and proof that you can already do machine learning before
-you ever open up how it works inside.
+you ever open up how it works inside. Ship it to its own repository, `mlforge-phase-0-capstone`,
+the same way you shipped the module projects, so it stands on its own as the first real piece
+of your portfolio.
 
 Begin with [Module 0.1](./01-landscape-of-ml.md).

@@ -119,6 +119,61 @@ comfortable lie.
 dataset, with the exploration plots and a short written summary of the data's problems and
 how you handled them. This is the foundation your Phase 0 capstone model will sit on.
 
+## The workshop: explore, clean, and ship
+
+Build this in its own repository, `mlforge-data-cleaning`, following along step by step. You
+will reuse the project habits from Module 0.2.
+
+**1. Create the project:**
+
+```bash
+mkdir mlforge-data-cleaning && cd mlforge-data-cleaning
+uv init
+uv add pandas matplotlib seaborn scikit-learn jupyter
+mkdir data notebooks
+```
+
+**2. Get a real, messy dataset.** Download one (from Kaggle or the
+[UCI repository](https://archive.ics.uci.edu/)) into `data/`. Pick something with missing
+values and mixed types, not a pre-cleaned teaching set.
+
+**3. Explore, in a notebook.** Start `uv run jupyter lab`, create
+`notebooks/01-explore.ipynb`, and work through the dataset: its shape, column types, missing
+values per column, and at least three plots that reveal something. Write a short markdown
+cell summarizing what you found and what looks problematic.
+
+**4. Checkpoint one, commit your exploration:**
+
+```bash
+git add -A && git commit -m "Explore the raw dataset"
+```
+
+**5. Clean and split.** In a second notebook or a `src/prepare.py` script, handle the
+missing values and any type or consistency issues (explaining each decision in a comment or
+markdown cell), then split into train, validation, and test sets. Write down the rule you
+will follow to keep cleaning leak-free once you start modeling.
+
+**6. Checkpoint two, commit the pipeline:**
+
+```bash
+git add -A && git commit -m "Clean and split the dataset, leak-free"
+```
+
+**7. Write a README** explaining the dataset, its problems, and how to run your code, then
+ship it:
+
+```bash
+git add -A && git commit -m "Add README"
+gh repo create mlforge-data-cleaning --public --source=. --push
+```
+
+(No `gh`? Create an empty public repo, `git remote add origin <url>`, `git push -u origin
+main`. Note: keep large raw data out of Git; if the file is big, document where to download
+it in the README rather than committing it.)
+
+**Done when:** `mlforge-data-cleaning` is on GitHub, showing the raw-to-clean journey, the
+exploration plots, and a clear written summary of the data's problems and your fixes.
+
 ## Going deeper (optional)
 
 - Read about tidy data (Hadley Wickham's principles) for a clear mental model of how tabular
