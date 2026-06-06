@@ -1,0 +1,66 @@
+name: Deploy book to GitHub Pages
+
+# Builds the MyST (Jupyter Book v2) site in book/ and publishes it to GitHub Pages
+# on every push to main. Also runnable manually from the Actions tab.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permissions required for the Pages deployment.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment; do not cancel an in-progress run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install MyST
+        run: npm install -g mystmd
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build the book (static HTML)
+        working-directory: ./book
+        # BASE_URL makes asset links resolve under the project subpath
+        # (for example /mlforge), which is how GitHub Pages serves project sites.
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_path }}
+        run: myst build --html
+
+      - name: Disable Jekyll processing
+        run: touch ./book/_build/html/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./book/_build/html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
