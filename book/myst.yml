@@ -55,6 +55,13 @@ project:
         - file: phase-4-ml-systems-mlops/03-serving-inference-optimization.md
         - file: phase-4-ml-systems-mlops/04-production-lifecycle.md
         - file: phase-4-ml-systems-mlops/05-ml-system-design.md
+    - title: "Phase 5 — Specialization & Research Maturity"
+      children:
+        - file: phase-5-specialization-research/00-overview.md
+        - file: phase-5-specialization-research/01-reading-reproducing-papers.md
+        - file: phase-5-specialization-research/02-reinforcement-learning.md
+        - file: phase-5-specialization-research/03-chosen-specialization.md
+        - file: phase-5-specialization-research/04-original-work.md
 site:
   title: MLForge
   template: book-theme
