@@ -127,7 +127,7 @@ the one-page explainer.
 
 ## The workshop: log it
 
-This module builds understanding, so it goes in your `mlforge-learning-log` repository (from
+This module builds understanding, so it goes in your `modelwright-learning-log` repository (from
 Module 0.1).
 
 1. Add `phase-3/01-llm-internals/` with a notebook (`probes.ipynb`) for the tokenizer and
@@ -138,7 +138,7 @@ Module 0.1).
 git add -A && git commit -m "Module 3.1: inside large language models" && git push
 ```
 
-**Done when:** your probes and explainer are in `mlforge-learning-log`.
+**Done when:** your probes and explainer are in `modelwright-learning-log`.
 
 ## Going deeper (optional)
 

@@ -41,7 +41,7 @@ jobs:
       - name: Build the book (static HTML)
         working-directory: ./book
         # BASE_URL makes asset links resolve under the project subpath
-        # (for example /mlforge), which is how GitHub Pages serves project sites.
+        # (for example /modelwright), which is how GitHub Pages serves project sites.
         env:
           BASE_URL: ${{ steps.pages.outputs.base_path }}
         run: myst build --html

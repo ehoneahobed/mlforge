@@ -135,13 +135,13 @@ the visualizations with appropriate skepticism.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-unsupervised`, using the project habits from
+Build this in its own repository, `modelwright-unsupervised`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-unsupervised && cd mlforge-unsupervised
+mkdir modelwright-unsupervised && cd modelwright-unsupervised
 uv init && uv add numpy scikit-learn matplotlib && mkdir src tests notebooks
 ```
 
@@ -154,13 +154,13 @@ uv init && uv add numpy scikit-learn matplotlib && mkdir src tests notebooks
 5. Ship it:
 
 ```bash
-gh repo create mlforge-unsupervised --public --source=. --push
+gh repo create modelwright-unsupervised --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-unsupervised` is on GitHub, the tests pass, and the README shows your
+**Done when:** `modelwright-unsupervised` is on GitHub, the tests pass, and the README shows your
 clustering and dimensionality-reduction results with an honest interpretation.
 
 ## Going deeper (optional)

@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This project (**MLForge**, a self-directed ML Engineering curriculum) is governed by
+This project (**Modelwright**, a self-directed ML Engineering curriculum) is governed by
 [`AGENTS.md`](./AGENTS.md). Read it first, every session.
 
 Quick pointers:

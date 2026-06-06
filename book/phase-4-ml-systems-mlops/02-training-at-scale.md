@@ -120,13 +120,13 @@ training loop, and the written scaling analysis.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-scaling-study`, using the project habits from
+Build this in its own repository, `modelwright-scaling-study`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-scaling-study && cd mlforge-scaling-study
+mkdir modelwright-scaling-study && cd modelwright-scaling-study
 uv init && uv add torch torchvision accelerate matplotlib && mkdir src
 ```
 
@@ -138,13 +138,13 @@ uv init && uv add torch torchvision accelerate matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-scaling-study --public --source=. --push
+gh repo create modelwright-scaling-study --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-scaling-study` is on GitHub with measured efficiency gains and a clear
+**Done when:** `modelwright-scaling-study` is on GitHub with measured efficiency gains and a clear
 written analysis of how the job would scale across GPUs.
 
 ## Going deeper (optional)

@@ -1,6 +1,6 @@
 # Progress Tracker
 
-A personal tracker for your journey through MLForge. Copy this file, keep your own
+A personal tracker for your journey through Modelwright. Copy this file, keep your own
 version, and update it whenever a gate goes green. It mirrors the
 [curriculum map](./book/curriculum-map.md).
 

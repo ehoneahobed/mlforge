@@ -1,8 +1,8 @@
-# MLForge
+# Modelwright
 
 **An open, project-based path to becoming a Machine Learning Engineer.**
 
-MLForge is a free, self-directed curriculum for people who want to learn machine
+Modelwright is a free, self-directed curriculum for people who want to learn machine
 learning seriously, all the way from foundations to research-grade and production-grade
 work. It is built on a simple belief: you do not learn machine learning by watching it,
 you learn it by building it. Every concept here is earned by writing code, reimplementing
@@ -12,14 +12,14 @@ employer.
 It takes its inspiration from The Odin Project, the open curriculum that has taught
 hundreds of thousands of people web development. The Odin Project's insight was never
 about writing the best tutorials. It was about *sequencing* the best existing material in
-the world and surrounding it with projects you cannot fake your way through. MLForge
+the world and surrounding it with projects you cannot fake your way through. Modelwright
 does the same thing for machine learning, and adds the one ingredient ML needs that web
 development does not: a relentless emphasis on understanding the internals, because in ML
 you can finish a course and still not understand how the model actually learns.
 
 ## Who this is for
 
-MLForge is for anyone who wants to become a machine learning engineer and is willing to
+Modelwright is for anyone who wants to become a machine learning engineer and is willing to
 do the work. It suits:
 
 - Software engineers moving into ML.
@@ -58,7 +58,7 @@ which is the correct timescale for genuine expertise. You walk it one module at 
 
 ## The four commitments
 
-Everything in MLForge follows four rules:
+Everything in Modelwright follows four rules:
 
 1. **Experience it, then build it.** You always use a technique first, with a library,
    seeing it work and building intuition, before you implement it from scratch. You earn the
@@ -68,7 +68,7 @@ Everything in MLForge follows four rules:
 
 2. **Curate, don't rewrite.** The world already has extraordinary free material: top
    university courses, the best textbooks, definitive explainer videos, and the original
-   research papers. MLForge links the best of it with surgical precision, pointing you to
+   research papers. Modelwright links the best of it with surgical precision, pointing you to
    exact lectures, chapters, and sections, and tells you what to skip. The original writing
    here is the connective tissue: why each thing matters, how the pieces fit, and the
    project specifications.
@@ -93,4 +93,4 @@ apply it. Optional deeper material and the canonical references close each modul
 - New here? Read [The Curriculum Map](./curriculum-map.md) to see the whole journey.
 - Ready to begin? Start with [Phase 0](./phase-0-foundations/00-overview.md).
 
-Welcome to the forge. Let's build.
+Welcome to the workshop. Let's build.

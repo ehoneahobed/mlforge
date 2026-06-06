@@ -47,7 +47,7 @@ uses. If a linked result is unfamiliar, refresh it there before continuing.
 
 This is the ship gate for the whole phase. Take a real tabular dataset (not a pre-cleaned
 teaching set) and carry it from raw data to a defensible result. Ship it to its own
-repository, `mlforge-phase-1-capstone`, the way you have shipped every project so far. The
+repository, `modelwright-phase-1-capstone`, the way you have shipped every project so far. The
 deliverable is that repository plus a written report that an interviewer or a hiring manager
 would respect.
 

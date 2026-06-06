@@ -140,13 +140,13 @@ three-model comparison on real data, and the interpretation write-up.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-trees-boosting`, using the project habits from
+Build this in its own repository, `modelwright-trees-boosting`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-trees-boosting && cd mlforge-trees-boosting
+mkdir modelwright-trees-boosting && cd modelwright-trees-boosting
 uv init && uv add numpy scikit-learn xgboost matplotlib && mkdir src tests
 ```
 
@@ -158,13 +158,13 @@ uv init && uv add numpy scikit-learn xgboost matplotlib && mkdir src tests
 5. Ship it:
 
 ```bash
-gh repo create mlforge-trees-boosting --public --source=. --push
+gh repo create modelwright-trees-boosting --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-trees-boosting` is on GitHub, the tests pass, and the README presents
+**Done when:** `modelwright-trees-boosting` is on GitHub, the tests pass, and the README presents
 your model comparison and what the feature importances revealed.
 
 ## Going deeper (optional)

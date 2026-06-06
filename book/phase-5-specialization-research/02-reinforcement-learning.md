@@ -137,12 +137,12 @@ write-up.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-rl`, using the project habits from Module 0.2.
+Build this in its own repository, `modelwright-rl`, using the project habits from Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-rl && cd mlforge-rl
+mkdir modelwright-rl && cd modelwright-rl
 uv init && uv add torch gymnasium matplotlib && mkdir src
 ```
 
@@ -153,13 +153,13 @@ uv init && uv add torch gymnasium matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-rl --public --source=. --push
+gh repo create modelwright-rl --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-rl` is on GitHub with a from-scratch agent that demonstrably solves a
+**Done when:** `modelwright-rl` is on GitHub with a from-scratch agent that demonstrably solves a
 standard environment, and a README that explains the algorithm.
 
 ## Going deeper (optional)

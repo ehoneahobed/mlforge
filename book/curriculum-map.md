@@ -211,9 +211,9 @@ would be proud to present to a hiring committee or a paper reviewer.
 
 ---
 
-## How MLForge maps to the roadmap.sh ML roadmap
+## How Modelwright maps to the roadmap.sh ML roadmap
 
-MLForge is cross-checked against the
+Modelwright is cross-checked against the
 [roadmap.sh Machine Learning roadmap](https://roadmap.sh/machine-learning) so its coverage
 is at least as complete, while going deeper through the from-scratch gates and the research
 phase. The mapping, roughly:

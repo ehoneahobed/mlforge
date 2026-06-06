@@ -71,7 +71,7 @@ down to the vocabulary.
 4. **The field as a visual map: the roadmap.sh Machine Learning roadmap.** Scroll through it
    once, top to bottom, as a bird's-eye view of the territory. Do not try to learn the
    topics from it; just notice the major regions (foundations, data, the model families,
-   evaluation, deep learning) and how they connect. MLForge is a deeper, project-based walk
+   evaluation, deep learning) and how they connect. Modelwright is a deeper, project-based walk
    through this same landscape.
    https://roadmap.sh/machine-learning
 
@@ -196,18 +196,18 @@ something on day one builds the habit that makes everything in this curriculum r
 starts the public portfolio that will eventually be your credential. Follow these steps, do
 not just read them.
 
-You will create one repository, `mlforge-learning-log`, that holds all your *written* work
+You will create one repository, `modelwright-learning-log`, that holds all your *written* work
 across the whole curriculum (writeups, concept-check reflections, your reading log). Your
 build projects later will each get their own repository; this one is for words.
 
 **1. Create the repository.** With the GitHub CLI:
 
 ```bash
-gh repo create mlforge-learning-log --public --clone
-cd mlforge-learning-log
+gh repo create modelwright-learning-log --public --clone
+cd modelwright-learning-log
 ```
 
-No `gh`? Create an empty public repository named `mlforge-learning-log` on github.com (do
+No `gh`? Create an empty public repository named `modelwright-learning-log` on github.com (do
 not add a README), then `git clone <its-url>` and `cd` into it.
 
 **2. Add your writeup.** Create a file `phase-0/01-landscape.md` and write the three pieces
@@ -217,8 +217,8 @@ self-placement paragraph.
 **3. Add a README** so the repo explains itself:
 
 ```bash
-echo "# MLForge Learning Log" > README.md
-echo "My written work as I go through the MLForge curriculum." >> README.md
+echo "# Modelwright Learning Log" > README.md
+echo "My written work as I go through the Modelwright curriculum." >> README.md
 ```
 
 **4. Commit and push:**
@@ -229,7 +229,7 @@ git commit -m "Module 0.1: the landscape of machine learning"
 git push
 ```
 
-**Done when:** `mlforge-learning-log` is live on your GitHub with your writeup visible in the
+**Done when:** `modelwright-learning-log` is live on your GitHub with your writeup visible in the
 `phase-0/` folder. From now on, every written deliverable and concept-check reflection goes
 here, building a record of your thinking across the journey.
 

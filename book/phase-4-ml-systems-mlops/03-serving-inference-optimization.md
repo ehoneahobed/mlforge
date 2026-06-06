@@ -150,13 +150,13 @@ the write-up.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-model-serving`, using the project habits from
+Build this in its own repository, `modelwright-model-serving`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-model-serving && cd mlforge-model-serving
+mkdir modelwright-model-serving && cd modelwright-model-serving
 uv init && uv add fastapi uvicorn torch onnxruntime locust && mkdir src tests
 ```
 
@@ -169,13 +169,13 @@ uv init && uv add fastapi uvicorn torch onnxruntime locust && mkdir src tests
 5. Ship it:
 
 ```bash
-gh repo create mlforge-model-serving --public --source=. --push
+gh repo create modelwright-model-serving --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-model-serving` is on GitHub, the endpoint runs, and the README shows
+**Done when:** `modelwright-model-serving` is on GitHub, the endpoint runs, and the README shows
 measured latency/throughput improvements from your optimizations.
 
 ## Going deeper (optional)

@@ -111,13 +111,13 @@ features, with documented feature definitions and a failure-mode note.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-data-pipeline`, using the project habits from
+Build this in its own repository, `modelwright-data-pipeline`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-data-pipeline && cd mlforge-data-pipeline
+mkdir modelwright-data-pipeline && cd modelwright-data-pipeline
 uv init && uv add pandas sqlalchemy dvc requests && mkdir src data
 ```
 
@@ -130,13 +130,13 @@ uv init && uv add pandas sqlalchemy dvc requests && mkdir src data
 5. Ship it:
 
 ```bash
-gh repo create mlforge-data-pipeline --public --source=. --push
+gh repo create modelwright-data-pipeline --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`. Keep large data out of Git; DVC handles it.)
 
-**Done when:** `mlforge-data-pipeline` is on GitHub with a reproducible, versioned pipeline and
+**Done when:** `modelwright-data-pipeline` is on GitHub with a reproducible, versioned pipeline and
 documented feature definitions.
 
 ## Going deeper (optional)

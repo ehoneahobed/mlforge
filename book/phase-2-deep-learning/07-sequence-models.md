@@ -118,12 +118,12 @@ written reflection on its limits and the motivation for attention.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-char-rnn`.
+Build this in its own repository, `modelwright-char-rnn`.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-char-rnn && cd mlforge-char-rnn
+mkdir modelwright-char-rnn && cd modelwright-char-rnn
 uv init && uv add torch matplotlib && mkdir src
 ```
 
@@ -135,13 +135,13 @@ uv init && uv add torch matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-char-rnn --public --source=. --push
+gh repo create modelwright-char-rnn --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-char-rnn` is on GitHub with generated samples and a reflection that
+**Done when:** `modelwright-char-rnn` is on GitHub with generated samples and a reflection that
 sets up why attention is the next step.
 
 ## Going deeper (optional)

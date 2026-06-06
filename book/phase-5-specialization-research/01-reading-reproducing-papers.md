@@ -113,13 +113,13 @@ the match.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-paper-reproduction`, using the project habits from
+Build this in its own repository, `modelwright-paper-reproduction`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-paper-reproduction && cd mlforge-paper-reproduction
+mkdir modelwright-paper-reproduction && cd modelwright-paper-reproduction
 uv init && uv add torch numpy matplotlib && mkdir src notes
 ```
 
@@ -132,13 +132,13 @@ uv init && uv add torch numpy matplotlib && mkdir src notes
 5. Ship it:
 
 ```bash
-gh repo create mlforge-paper-reproduction --public --source=. --push
+gh repo create modelwright-paper-reproduction --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-paper-reproduction` is on GitHub with a reproduced result, a comparison
+**Done when:** `modelwright-paper-reproduction` is on GitHub with a reproduced result, a comparison
 to the paper, and an honest gap analysis. This is a standout portfolio piece; few candidates can
 show one.
 
@@ -146,7 +146,7 @@ show one.
 
 - Participate in the annual ML Reproducibility Challenge with your reproduction.
 - Start a reading habit: one paper a week with three-pass notes, building your own annotated
-  literature log (in your `mlforge-learning-log`).
+  literature log (in your `modelwright-learning-log`).
 - Read a paper you suspect is flawed and write a critical review.
 
 ## Canonical references

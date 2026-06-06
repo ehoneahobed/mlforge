@@ -129,13 +129,13 @@ read and critique, each covering the full stack with honest trade-offs.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-ml-system-design`. This is a writing-and-architecture
+Build this in its own repository, `modelwright-ml-system-design`. This is a writing-and-architecture
 deliverable, and a strong portfolio and interview-prep artifact.
 
 1. Set up the repo:
 
 ```bash
-mkdir mlforge-ml-system-design && cd mlforge-ml-system-design && git init
+mkdir modelwright-ml-system-design && cd modelwright-ml-system-design && git init
 mkdir designs diagrams
 ```
 
@@ -147,13 +147,13 @@ mkdir designs diagrams
 5. Ship it:
 
 ```bash
-gh repo create mlforge-ml-system-design --public --source=. --push
+gh repo create modelwright-ml-system-design --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-ml-system-design` is on GitHub with two complete, defensible design
+**Done when:** `modelwright-ml-system-design` is on GitHub with two complete, defensible design
 documents covering the full ML system stack with explicit trade-offs.
 
 ## Going deeper (optional)

@@ -1,11 +1,11 @@
-# Jupyter Book v2 (MyST) configuration for MLForge
+# Jupyter Book v2 (MyST) configuration for Modelwright
 # Run locally:  cd book && jupyter book start     (live preview)
 #   or build:   cd book && jupyter book build --html
 version: 1
 project:
-  title: "MLForge — A Project-Based Path to Machine Learning Engineering"
+  title: "Modelwright — A Project-Based Path to Machine Learning Engineering"
   authors:
-    - name: MLForge
+    - name: Modelwright
   toc:
     - file: intro.md
     - title: Start Here
@@ -63,10 +63,10 @@ project:
         - file: phase-5-specialization-research/03-chosen-specialization.md
         - file: phase-5-specialization-research/04-original-work.md
 site:
-  title: MLForge
+  title: Modelwright
   template: book-theme
   options:
-    logo_text: MLForge
+    logo_text: Modelwright
   parts:
     # Empty string removes the default "Made with MyST" sidebar badge.
     primary_sidebar_footer: ""

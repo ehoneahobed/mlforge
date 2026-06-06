@@ -13,7 +13,7 @@ foundational track below is open-ended and depends on your starting point.
 ## Why this matters
 
 Machine learning rests on a surprisingly small set of mathematical ideas, used over and
-over. MLForge does not teach them as a separate semester for two reasons. First,
+over. Modelwright does not teach them as a separate semester for two reasons. First,
 front-loading months of math you will not apply for a long time is one of the most reliable
 ways to lose momentum. Second, mathematics is retained far better when it is learned in
 service of a concrete model than when it is studied in the abstract. So the curriculum
@@ -147,7 +147,7 @@ building, never as mathematics for its own sake.
 
 There is nothing to ship here, but make your self-assessment real by recording it.
 
-1. In your `mlforge-learning-log` repository (from Module 0.1), add
+1. In your `modelwright-learning-log` repository (from Module 0.1), add
    `phase-0/04-math-self-check.md` with your honest answers to the knowledge check above and
    a short note on which areas, if any, you will warm up using the foundational track before
    Phase 1.
@@ -157,7 +157,7 @@ There is nothing to ship here, but make your self-assessment real by recording i
 git add -A && git commit -m "Module 0.4: math self-check" && git push
 ```
 
-**Done when:** your self-check is in `mlforge-learning-log`. Revisit it as later modules send
+**Done when:** your self-check is in `modelwright-learning-log`. Revisit it as later modules send
 you back here for specific results.
 
 ## Canonical references

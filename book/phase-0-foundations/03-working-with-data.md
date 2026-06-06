@@ -121,13 +121,13 @@ how you handled them. This is the foundation your Phase 0 capstone model will si
 
 ## The workshop: explore, clean, and ship
 
-Build this in its own repository, `mlforge-data-cleaning`, following along step by step. You
+Build this in its own repository, `modelwright-data-cleaning`, following along step by step. You
 will reuse the project habits from Module 0.2.
 
 **1. Create the project:**
 
 ```bash
-mkdir mlforge-data-cleaning && cd mlforge-data-cleaning
+mkdir modelwright-data-cleaning && cd modelwright-data-cleaning
 uv init
 uv add pandas matplotlib seaborn scikit-learn jupyter
 mkdir data notebooks
@@ -164,14 +164,14 @@ ship it:
 
 ```bash
 git add -A && git commit -m "Add README"
-gh repo create mlforge-data-cleaning --public --source=. --push
+gh repo create modelwright-data-cleaning --public --source=. --push
 ```
 
 (No `gh`? Create an empty public repo, `git remote add origin <url>`, `git push -u origin
 main`. Note: keep large raw data out of Git; if the file is big, document where to download
 it in the README rather than committing it.)
 
-**Done when:** `mlforge-data-cleaning` is on GitHub, showing the raw-to-clean journey, the
+**Done when:** `modelwright-data-cleaning` is on GitHub, showing the raw-to-clean journey, the
 exploration plots, and a clear written summary of the data's problems and your fixes.
 
 ## Going deeper (optional)

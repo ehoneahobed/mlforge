@@ -112,13 +112,13 @@ from Phase 0 so it is reproducible.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-first-neural-net`, using the project habits from
+Build this in its own repository, `modelwright-first-neural-net`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-first-neural-net && cd mlforge-first-neural-net
+mkdir modelwright-first-neural-net && cd modelwright-first-neural-net
 uv init && uv add torch torchvision matplotlib && mkdir src
 ```
 
@@ -130,13 +130,13 @@ uv init && uv add torch torchvision matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-first-neural-net --public --source=. --push
+gh repo create modelwright-first-neural-net --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-first-neural-net` is on GitHub with a trained network, plotted curves,
+**Done when:** `modelwright-first-neural-net` is on GitHub with a trained network, plotted curves,
 a documented experiment, and your open questions, which the next module begins to answer.
 
 ## Going deeper (optional)

@@ -1,6 +1,6 @@
-# AGENTS.md — The Constitution of *MLForge*
+# AGENTS.md — The Constitution of *Modelwright*
 
-> **MLForge** is a self-directed, project-driven curriculum for becoming a Machine
+> **Modelwright** is a self-directed, project-driven curriculum for becoming a Machine
 > Learning Engineer with the depth of someone who completed a research degree (MSc/PhD)
 > **and** the practical judgment of someone who has shipped ML systems in industry.
 >
@@ -11,7 +11,7 @@
 
 ## 0. Who this is for (the audience)
 
-MLForge is an open, public curriculum. Write for a general audience of aspiring machine
+Modelwright is an open, public curriculum. Write for a general audience of aspiring machine
 learning engineers, not for any single individual. Assume the reader:
 
 - **Can program**, ideally in Python, and is comfortable with Git and the command line.
@@ -33,7 +33,7 @@ individual, or refers to private context. Lessons must stand on their own for an
 
 ---
 
-## 1. Philosophy (why MLForge is built the way it is)
+## 1. Philosophy (why Modelwright is built the way it is)
 
 The Odin Project's real genius is not its writing. It is its **spine**: ruthless
 sequencing of the best existing free material, plus original projects you cannot bluff
@@ -72,7 +72,7 @@ your way through. We copy that, and we add the one thing ML needs that web dev d
 
 **The central tension we deliberately resolve:** *use-it* vs *build-it-from-scratch.* Pure
 curation produces people who can use tools but panic when they break. Pure from-scratch is
-slow, reinvents wheels, and is a miserable way to begin. MLForge does both, in a fixed
+slow, reinvents wheels, and is a miserable way to begin. Modelwright does both, in a fixed
 order: use it first to build intuition and comfort, then build it from scratch to earn
 mastery. The accessible entry and the expert ceiling are the same path walked in the right
 sequence. Every module declares which mode it is in and never opens with a cold build.
@@ -147,8 +147,8 @@ by step, so they follow along and build rather than read. Include: a specific Gi
 name, the exact terminal commands to create the repo and set up the environment, ordered
 checkpoints saying what to write and when to commit, and a final "done when it's on GitHub"
 where the pushed repo is the artifact. Naming convention: written deliverables (writeups,
-concept-check reflections, the reading log) go in one `mlforge-learning-log` repo, created in
-Module 0.1; each build or ship project gets its own `mlforge-<topic>` repo so it stands alone
+concept-check reflections, the reading log) go in one `modelwright-learning-log` repo, created in
+Module 0.1; each build or ship project gets its own `modelwright-<topic>` repo so it stands alone
 as a portfolio piece. Give a code scaffold with the structure and a few TODOs rather than a
 complete copy-paste solution: the apprentice must write the substance. As modules get more
 advanced, the workshop hand-holding tapers; early modules hold the hand tightly.
@@ -257,7 +257,7 @@ When a session starts on this curriculum, the agent must:
 
 The curriculum is cross-checked against the roadmap.sh Machine Learning roadmap
 (https://roadmap.sh/machine-learning) for coverage, but it is deeper and more rigorous:
-roadmap.sh tells you the *topics*; MLForge makes you *earn* them. Where roadmap.sh is
+roadmap.sh tells you the *topics*; Modelwright makes you *earn* them. Where roadmap.sh is
 breadth-first and job-oriented, we add the research layer (paper reproduction, theory,
 original work) that takes a learner past "employable" to "expert."
 

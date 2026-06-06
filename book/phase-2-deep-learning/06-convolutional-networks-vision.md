@@ -134,13 +134,13 @@ transfer-learning comparison, with the report.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-cnn-vision`, using the project habits from
+Build this in its own repository, `modelwright-cnn-vision`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-cnn-vision && cd mlforge-cnn-vision
+mkdir modelwright-cnn-vision && cd modelwright-cnn-vision
 uv init && uv add torch torchvision numpy matplotlib && mkdir src tests
 ```
 
@@ -153,13 +153,13 @@ uv init && uv add torch torchvision numpy matplotlib && mkdir src tests
 5. Ship it:
 
 ```bash
-gh repo create mlforge-cnn-vision --public --source=. --push
+gh repo create modelwright-cnn-vision --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-cnn-vision` is on GitHub, the convolution test passes, and the README
+**Done when:** `modelwright-cnn-vision` is on GitHub, the convolution test passes, and the README
 shows your CNN and transfer-learning results.
 
 ## Going deeper (optional)

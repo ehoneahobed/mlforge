@@ -132,13 +132,13 @@ write-up.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-pytorch-mlp`, using the project habits from
+Build this in its own repository, `modelwright-pytorch-mlp`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-pytorch-mlp && cd mlforge-pytorch-mlp
+mkdir modelwright-pytorch-mlp && cd modelwright-pytorch-mlp
 uv init && uv add torch torchvision matplotlib && mkdir src
 ```
 
@@ -149,13 +149,13 @@ uv init && uv add torch torchvision matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-pytorch-mlp --public --source=. --push
+gh repo create modelwright-pytorch-mlp --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-pytorch-mlp` is on GitHub, matches your from-scratch accuracy, and the
+**Done when:** `modelwright-pytorch-mlp` is on GitHub, matches your from-scratch accuracy, and the
 README explains how the framework maps to what you built by hand.
 
 ## Going deeper (optional)

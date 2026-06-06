@@ -137,13 +137,13 @@ report that fires on shifted data, and a defensible A/B test plan.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-ml-lifecycle`, using the project habits from
+Build this in its own repository, `modelwright-ml-lifecycle`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-ml-lifecycle && cd mlforge-ml-lifecycle
+mkdir modelwright-ml-lifecycle && cd modelwright-ml-lifecycle
 uv init && uv add mlflow evidently scikit-learn fastapi pytest && mkdir src tests .github/workflows
 ```
 
@@ -155,13 +155,13 @@ uv init && uv add mlflow evidently scikit-learn fastapi pytest && mkdir src test
 5. Ship it:
 
 ```bash
-gh repo create mlforge-ml-lifecycle --public --source=. --push
+gh repo create modelwright-ml-lifecycle --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-ml-lifecycle` is on GitHub with passing CI, a registered model, a drift
+**Done when:** `modelwright-ml-lifecycle` is on GitHub with passing CI, a registered model, a drift
 report that detects shifted data, and a written A/B test plan.
 
 ## Going deeper (optional)

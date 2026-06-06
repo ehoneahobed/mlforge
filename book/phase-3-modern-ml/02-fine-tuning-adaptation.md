@@ -148,13 +148,13 @@ defined metric, with the write-up.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-llm-finetune`, using the project habits from
+Build this in its own repository, `modelwright-llm-finetune`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-llm-finetune && cd mlforge-llm-finetune
+mkdir modelwright-llm-finetune && cd modelwright-llm-finetune
 uv init && uv add transformers peft trl datasets accelerate wandb && mkdir src
 ```
 
@@ -167,13 +167,13 @@ uv init && uv add transformers peft trl datasets accelerate wandb && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-llm-finetune --public --source=. --push
+gh repo create modelwright-llm-finetune --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-llm-finetune` is on GitHub, the fine-tuned model measurably beats the
+**Done when:** `modelwright-llm-finetune` is on GitHub, the fine-tuned model measurably beats the
 baseline, and the README documents the lift and the configuration.
 
 ## Going deeper (optional)

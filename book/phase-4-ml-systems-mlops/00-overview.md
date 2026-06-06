@@ -42,7 +42,7 @@ not have. The judgment transfers; the scale is a detail.
 
 **Capstone 4:** deploy a production-grade ML service end to end, with a trained model, optimized
 inference behind an API, monitoring and drift detection, and a system-design document. Ship it
-to its own repository, `mlforge-phase-4-capstone`. This is the project that proves you can take
+to its own repository, `modelwright-phase-4-capstone`. This is the project that proves you can take
 a model all the way to a running, observable service, which is the core of the job.
 
 Begin with [Module 4.1](./01-data-engineering-for-ml.md).

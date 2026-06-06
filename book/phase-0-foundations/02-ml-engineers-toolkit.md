@@ -268,13 +268,13 @@ bar, met once here, becomes your default for every project that follows.
 Follow these steps in order, in your terminal, building as you go. Do not read ahead and
 skip; the point is to do it. By the end you will have a real, reproducible project on GitHub
 that becomes the template for everything you build later. This project lives in its own
-repository, `mlforge-first-model`.
+repository, `modelwright-first-model`.
 
 **1. Create the project.** `uv init` sets up a project folder, a `pyproject.toml`, a
 `.gitignore`, and a git repository all at once:
 
 ```bash
-mkdir mlforge-first-model && cd mlforge-first-model
+mkdir modelwright-first-model && cd modelwright-first-model
 uv init
 uv add scikit-learn pandas matplotlib wandb
 mkdir src
@@ -300,7 +300,7 @@ def set_seeds(seed):
 
 def main():
     set_seeds(SEED)
-    wandb.init(project="mlforge-first-model", config=CONFIG)
+    wandb.init(project="modelwright-first-model", config=CONFIG)
 
     X, y = load_iris(return_X_y=True)
     X_train, X_test, y_train, y_test = train_test_split(
@@ -349,13 +349,13 @@ git add -A && git commit -m "Add reusable project template notes"
 **6. Ship it to GitHub:**
 
 ```bash
-gh repo create mlforge-first-model --public --source=. --push
+gh repo create modelwright-first-model --public --source=. --push
 ```
 
-No `gh`? Create an empty public repo named `mlforge-first-model` on github.com, then:
+No `gh`? Create an empty public repo named `modelwright-first-model` on github.com, then:
 `git remote add origin <its-url>` and `git push -u origin main`.
 
-**Done when:** `mlforge-first-model` is on your GitHub, and a stranger could clone it, run
+**Done when:** `modelwright-first-model` is on your GitHub, and a stranger could clone it, run
 `uv sync`, run the script, reproduce your accuracy, and find your tracked run. You now own a
 template you will reuse for the rest of the curriculum.
 

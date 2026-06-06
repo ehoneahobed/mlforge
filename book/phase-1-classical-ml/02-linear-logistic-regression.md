@@ -152,13 +152,13 @@ report, and the interpretation reflection.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-linear-models`, using the project habits from
+Build this in its own repository, `modelwright-linear-models`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-linear-models && cd mlforge-linear-models
+mkdir modelwright-linear-models && cd modelwright-linear-models
 uv init && uv add numpy scikit-learn matplotlib && mkdir src tests
 ```
 
@@ -170,13 +170,13 @@ uv init && uv add numpy scikit-learn matplotlib && mkdir src tests
 5. Ship it:
 
 ```bash
-gh repo create mlforge-linear-models --public --source=. --push
+gh repo create modelwright-linear-models --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo on github.com, then `git remote add origin <url>`
    and `git push -u origin main`.)
 
-**Done when:** `mlforge-linear-models` is on GitHub, the tests pass, and the README lets a
+**Done when:** `modelwright-linear-models` is on GitHub, the tests pass, and the README lets a
 stranger reproduce your results and read your derivations.
 
 ## Going deeper (optional)

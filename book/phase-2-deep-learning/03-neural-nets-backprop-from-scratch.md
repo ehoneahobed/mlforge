@@ -131,13 +131,13 @@ accuracy bar on MNIST, plus the report.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-mlp-from-scratch`, using the project habits from
+Build this in its own repository, `modelwright-mlp-from-scratch`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-mlp-from-scratch && cd mlforge-mlp-from-scratch
+mkdir modelwright-mlp-from-scratch && cd modelwright-mlp-from-scratch
 uv init && uv add numpy matplotlib scikit-learn torch && mkdir src tests
 ```
 
@@ -150,13 +150,13 @@ uv init && uv add numpy matplotlib scikit-learn torch && mkdir src tests
 5. Ship it:
 
 ```bash
-gh repo create mlforge-mlp-from-scratch --public --source=. --push
+gh repo create modelwright-mlp-from-scratch --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-mlp-from-scratch` is on GitHub, the gradient check passes, and the
+**Done when:** `modelwright-mlp-from-scratch` is on GitHub, the gradient check passes, and the
 README shows your MNIST curves and accuracy.
 
 ## Going deeper (optional)

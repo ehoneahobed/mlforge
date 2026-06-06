@@ -121,13 +121,13 @@ just coding.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-training-recipe`, using the project habits from
+Build this in its own repository, `modelwright-training-recipe`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-training-recipe && cd mlforge-training-recipe
+mkdir modelwright-training-recipe && cd modelwright-training-recipe
 uv init && uv add torch torchvision matplotlib && mkdir src
 ```
 
@@ -139,13 +139,13 @@ uv init && uv add torch torchvision matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-training-recipe --public --source=. --push
+gh repo create modelwright-training-recipe --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-training-recipe` is on GitHub with a reproducible ablation showing how
+**Done when:** `modelwright-training-recipe` is on GitHub with a reproducible ablation showing how
 each technique improved training, and an analysis of which mattered most.
 
 ## Going deeper (optional)

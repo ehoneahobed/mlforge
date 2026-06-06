@@ -112,12 +112,12 @@ plots, and the written interpretation connecting what you saw to the concepts.
 ## The workshop: ship it
 
 This module's deliverable is an empirical study, so it gets its own repository,
-`mlforge-svm-study`.
+`modelwright-svm-study`.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-svm-study && cd mlforge-svm-study
+mkdir modelwright-svm-study && cd modelwright-svm-study
 uv init && uv add scikit-learn numpy matplotlib && mkdir notebooks
 ```
 
@@ -129,13 +129,13 @@ uv init && uv add scikit-learn numpy matplotlib && mkdir notebooks
 5. Ship it:
 
 ```bash
-gh repo create mlforge-svm-study --public --source=. --push
+gh repo create modelwright-svm-study --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-svm-study` is on GitHub with the boundary visualizations, the
+**Done when:** `modelwright-svm-study` is on GitHub with the boundary visualizations, the
 `C`/`gamma` study, and your interpretation tying what you saw to margins and kernels.
 
 ## Going deeper (optional)

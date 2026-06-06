@@ -1,13 +1,13 @@
-# Contributing to MLForge
+# Contributing to Modelwright
 
-Thank you for wanting to improve MLForge. This curriculum is built on a specific philosophy
+Thank you for wanting to improve Modelwright. This curriculum is built on a specific philosophy
 and a strict structure, and contributions are most useful when they fit that shape. This
 guide explains how to contribute well. The full authoring standard lives in
 [`AGENTS.md`](./AGENTS.md); read it before proposing content.
 
 ## The philosophy in one minute
 
-MLForge follows three commitments:
+Modelwright follows three commitments:
 
 1. **Curate, don't rewrite.** We link the best existing free material with precision (exact
    lectures, chapters, sections) and write the connective tissue and projects. We do not

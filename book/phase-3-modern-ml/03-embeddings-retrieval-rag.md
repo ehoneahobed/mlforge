@@ -130,12 +130,12 @@ analysis of its failures and your attempt to fix them.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-rag`, using the project habits from Module 0.2.
+Build this in its own repository, `modelwright-rag`, using the project habits from Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-rag && cd mlforge-rag
+mkdir modelwright-rag && cd modelwright-rag
 uv init && uv add sentence-transformers faiss-cpu llama-index ragas && mkdir src data
 ```
 
@@ -147,13 +147,13 @@ uv init && uv add sentence-transformers faiss-cpu llama-index ragas && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-rag --public --source=. --push
+gh repo create modelwright-rag --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-rag` is on GitHub, answers questions from your corpus with sources, and
+**Done when:** `modelwright-rag` is on GitHub, answers questions from your corpus with sources, and
 the README reports a real evaluation plus what you learned about where it fails.
 
 ## Going deeper (optional)

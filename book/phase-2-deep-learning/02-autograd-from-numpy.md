@@ -171,13 +171,13 @@ proper, reproducible project, not a loose notebook.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-autograd`, using the project habits from
+Build this in its own repository, `modelwright-autograd`, using the project habits from
 Module 0.2. (Start from the provided starter notebook, then package the result.)
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-autograd && cd mlforge-autograd
+mkdir modelwright-autograd && cd modelwright-autograd
 uv init && uv add numpy matplotlib torch scikit-learn && mkdir src tests
 ```
 
@@ -189,13 +189,13 @@ uv init && uv add numpy matplotlib torch scikit-learn && mkdir src tests
 5. Ship it:
 
 ```bash
-gh repo create mlforge-autograd --public --source=. --push
+gh repo create modelwright-autograd --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-autograd` is on GitHub, the gradient check passes, the MLP visibly
+**Done when:** `modelwright-autograd` is on GitHub, the gradient check passes, the MLP visibly
 learns, and the README contains your derivations. This is a portfolio centerpiece.
 
 ## Going deeper (optional)

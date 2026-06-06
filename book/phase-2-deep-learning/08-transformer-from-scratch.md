@@ -140,13 +140,13 @@ your own attention implementation, with the write-up.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-nano-transformer`. This is a portfolio centerpiece;
+Build this in its own repository, `modelwright-nano-transformer`. This is a portfolio centerpiece;
 make it clean.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-nano-transformer && cd mlforge-nano-transformer
+mkdir modelwright-nano-transformer && cd modelwright-nano-transformer
 uv init && uv add torch numpy matplotlib && mkdir src
 ```
 
@@ -159,13 +159,13 @@ uv init && uv add torch numpy matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-nano-transformer --public --source=. --push
+gh repo create modelwright-nano-transformer --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-nano-transformer` is on GitHub, the model generates coherent text from
+**Done when:** `modelwright-nano-transformer` is on GitHub, the model generates coherent text from
 your own attention code, and the README explains how it works. You have built a GPT.
 
 ## Going deeper (optional)

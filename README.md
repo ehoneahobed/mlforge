@@ -1,10 +1,10 @@
-# MLForge
+# Modelwright
 
 **An open, project-based curriculum for becoming a Machine Learning Engineer.**
 
-**Read the book: https://ehoneahobed.github.io/mlforge**
+**Read the book: https://ehoneahobed.github.io/modelwright**
 
-MLForge is a free, self-directed path through machine learning, from foundations to
+Modelwright is a free, self-directed path through machine learning, from foundations to
 research-grade and production-grade work. It is inspired by The Odin Project: rather than
 rewriting the world's best courses, books, and papers, it sequences them with precision and
 surrounds them with projects you cannot fake your way through. Where it differs is its
@@ -78,7 +78,7 @@ The full authoring standard that governs how modules are written and maintained 
 
 ## License
 
-MLForge is open and free to use, in the spirit of The Odin Project.
+Modelwright is open and free to use, in the spirit of The Odin Project.
 
 - **Curriculum content** (the written lessons and curriculum map) is licensed under
   **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**. See

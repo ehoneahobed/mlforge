@@ -127,12 +127,12 @@ a write-up quantifying the value of the feature work and naming the highest-impa
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-feature-engineering`.
+Build this in its own repository, `modelwright-feature-engineering`.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-feature-engineering && cd mlforge-feature-engineering
+mkdir modelwright-feature-engineering && cd modelwright-feature-engineering
 uv init && uv add pandas scikit-learn imbalanced-learn matplotlib && mkdir src notebooks
 ```
 
@@ -145,13 +145,13 @@ uv init && uv add pandas scikit-learn imbalanced-learn matplotlib && mkdir src n
 5. Ship it:
 
 ```bash
-gh repo create mlforge-feature-engineering --public --source=. --push
+gh repo create modelwright-feature-engineering --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-feature-engineering` is on GitHub, with the two pipelines, a leak-free
+**Done when:** `modelwright-feature-engineering` is on GitHub, with the two pipelines, a leak-free
 comparison, and a write-up naming the highest-impact decision.
 
 ## Going deeper (optional)

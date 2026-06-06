@@ -124,13 +124,13 @@ of your standard toolkit for the phase capstone and beyond.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-evaluation-harness`. This is a tool you will reuse
+Build this in its own repository, `modelwright-evaluation-harness`. This is a tool you will reuse
 in later modules, so make it clean.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-evaluation-harness && cd mlforge-evaluation-harness
+mkdir modelwright-evaluation-harness && cd modelwright-evaluation-harness
 uv init && uv add scikit-learn numpy pandas matplotlib && mkdir src tests notebooks
 ```
 
@@ -143,13 +143,13 @@ uv init && uv add scikit-learn numpy pandas matplotlib && mkdir src tests notebo
 5. Ship it:
 
 ```bash
-gh repo create mlforge-evaluation-harness --public --source=. --push
+gh repo create modelwright-evaluation-harness --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-evaluation-harness` is on GitHub, the tests pass, and the README
+**Done when:** `modelwright-evaluation-harness` is on GitHub, the tests pass, and the README
 documents your leakage demonstration. Reuse this harness in the phase capstone.
 
 ## Going deeper (optional)

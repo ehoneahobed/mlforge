@@ -1,6 +1,6 @@
 # Phase 2 — Deep Learning
 
-This is where neural networks arrive, and where MLForge's experience-first principle does
+This is where neural networks arrive, and where Modelwright's experience-first principle does
 its most important work. You will train a real neural network with PyTorch and watch it
 learn before you build any of the machinery underneath it. Only then, knowing exactly what a
 network is and what it is for, do you open it up and construct the engine that powers it,
@@ -45,6 +45,6 @@ each used first and then built.
 
 **Capstone 2:** reproduce a published result. Take a small model or a compact training run,
 reproduce it from scratch, and write up where your numbers matched, where they did not, and
-why. Ship it to its own repository, `mlforge-phase-2-capstone`.
+why. Ship it to its own repository, `modelwright-phase-2-capstone`.
 
 Begin with [Module 2.1](./01-neural-networks-hands-on.md).

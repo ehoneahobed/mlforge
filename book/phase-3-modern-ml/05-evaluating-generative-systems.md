@@ -123,12 +123,12 @@ verdict with its limitations.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-llm-eval`, using the project habits from Module 0.2.
+Build this in its own repository, `modelwright-llm-eval`, using the project habits from Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-llm-eval && cd mlforge-llm-eval
+mkdir modelwright-llm-eval && cd modelwright-llm-eval
 uv init && uv add evaluate ragas datasets pandas matplotlib && mkdir src data
 ```
 
@@ -140,13 +140,13 @@ uv init && uv add evaluate ragas datasets pandas matplotlib && mkdir src data
 5. Ship it:
 
 ```bash
-gh repo create mlforge-llm-eval --public --source=. --push
+gh repo create modelwright-llm-eval --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-llm-eval` is on GitHub, evaluates a real system across multiple layers,
+**Done when:** `modelwright-llm-eval` is on GitHub, evaluates a real system across multiple layers,
 checks its metrics against human judgment, and states an honest verdict with limitations.
 
 ## Going deeper (optional)

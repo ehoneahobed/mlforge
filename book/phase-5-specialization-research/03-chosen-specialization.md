@@ -108,7 +108,7 @@ that demonstrates expertise in your chosen area.
 ## The workshop: ship it
 
 Build this in its own repository, named for your specialization (for example
-`mlforge-nlp-<project>`, `mlforge-cv-<project>`, or `mlforge-rl-<project>`). Use every habit from
+`modelwright-nlp-<project>`, `modelwright-cv-<project>`, or `modelwright-rl-<project>`). Use every habit from
 the curriculum: clean structure, reproducible environment, tests where appropriate, experiment
 tracking, and a thorough README.
 

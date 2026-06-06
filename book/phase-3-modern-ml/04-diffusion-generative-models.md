@@ -130,13 +130,13 @@ with the write-up.
 
 ## The workshop: ship it
 
-Build this in its own repository, `mlforge-diffusion`, using the project habits from
+Build this in its own repository, `modelwright-diffusion`, using the project habits from
 Module 0.2.
 
 1. Set up the project:
 
 ```bash
-mkdir mlforge-diffusion && cd mlforge-diffusion
+mkdir modelwright-diffusion && cd modelwright-diffusion
 uv init && uv add torch torchvision diffusers matplotlib && mkdir src
 ```
 
@@ -149,13 +149,13 @@ uv init && uv add torch torchvision diffusers matplotlib && mkdir src
 5. Ship it:
 
 ```bash
-gh repo create mlforge-diffusion --public --source=. --push
+gh repo create modelwright-diffusion --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
    `git push -u origin main`.)
 
-**Done when:** `mlforge-diffusion` is on GitHub, generates recognizable images from your own
+**Done when:** `modelwright-diffusion` is on GitHub, generates recognizable images from your own
 diffusion code, and the README explains how it works.
 
 ## Going deeper (optional)

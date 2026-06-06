@@ -40,7 +40,7 @@ durable sources, and you should expect to supplement them with current documenta
 
 **Capstone 3:** build, fine-tune, and rigorously evaluate an end-to-end LLM application, with
 an evaluation suite you designed and can defend. Ship it to its own repository,
-`mlforge-phase-3-capstone`. This is the project that demonstrates you can not only use modern
+`modelwright-phase-3-capstone`. This is the project that demonstrates you can not only use modern
 models but adapt them, ground them, and judge them honestly, which is exactly what the work
 requires.
 

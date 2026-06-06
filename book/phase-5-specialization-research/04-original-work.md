@@ -96,7 +96,7 @@ communicated, that you would be proud to put your name on.
 ## The workshop: ship it (and make it your capstone)
 
 This module *is* the phase capstone. Ship your original work to its own repository,
-`mlforge-capstone` (or a name fitting the work), and treat it as the single best demonstration of
+`modelwright-capstone` (or a name fitting the work), and treat it as the single best demonstration of
 everything you have built.
 
 1. Set it up with `uv` and your full standard project structure: clean code, reproducible
@@ -107,7 +107,7 @@ everything you have built.
 4. Ship it publicly, and, if it is a contribution to an existing project, open the pull request.
 
 ```bash
-gh repo create mlforge-capstone --public --source=. --push
+gh repo create modelwright-capstone --public --source=. --push
 ```
 
    (No `gh`? Create an empty public repo, then `git remote add origin <url>` and

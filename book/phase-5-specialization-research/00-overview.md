@@ -36,7 +36,7 @@ original contribution that lives in the world.
 
 **Capstone 5:** a portfolio-defining piece of original work, taken to a standard you would be
 proud to present to a hiring committee or a paper reviewer. This is the polished culmination of
-Module 5.4, shipped to its own repository, `mlforge-capstone`, with a writeup that stands on its
+Module 5.4, shipped to its own repository, `modelwright-capstone`, with a writeup that stands on its
 own. It is the single artifact that best demonstrates everything the curriculum built.
 
 Begin with [Module 5.1](./01-reading-reproducing-papers.md).

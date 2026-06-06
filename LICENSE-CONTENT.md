@@ -19,9 +19,9 @@ You are free to:
 
 Under the following terms:
 
-- **Attribution** — You must give appropriate credit to MLForge, provide a link to the
+- **Attribution** — You must give appropriate credit to Modelwright, provide a link to the
   license, and indicate if changes were made. You may do so in any reasonable manner, but
-  not in any way that suggests MLForge endorses you or your use.
+  not in any way that suggests Modelwright endorses you or your use.
 - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute
   your contributions under the same license as the original.
 
@@ -42,6 +42,6 @@ them does not place them under this license.
 
 ---
 
-*Replace "MLForge" above with your legal name or organization before publishing if you want
+*Replace "Modelwright" above with your legal name or organization before publishing if you want
 attribution to point to a specific person or entity. The year and copyright holder in
 [`LICENSE`](./LICENSE) should be updated the same way.*
