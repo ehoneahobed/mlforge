@@ -49,7 +49,7 @@ By the end of this module you will be able to:
    classical ML, written to be readable. Chapter 2, *Statistical Learning*, covers what it
    means to estimate a function, the bias-variance trade-off, and assessing model accuracy.
    This is the single best written treatment of this module's ideas. The book is free.
-   https://www.statlearning.com/ (PDF: https://hastie.su.domains/ISLP/ISLP_website.pdf)
+   https://www.statlearning.com/ (the free PDF is linked from that page)
 
 3. **StatQuest, the bias-variance and cross-validation videos.** Josh Starmer's explanations
    make these concepts stick visually. Watch "Machine Learning Fundamentals: Bias and

@@ -41,7 +41,7 @@ By the end of this module you will be able to:
 1. **Google Machine Learning Crash Course, the classification and metrics units.** Clear
    coverage of accuracy, precision, recall, the precision-recall trade-off, ROC and AUC,
    and prediction bias. Free.
-   https://developers.google.com/machine-learning/crash-course/classification/
+   https://developers.google.com/machine-learning/crash-course/classification
 
 2. **scikit-learn user guide, model evaluation and calibration.** The metrics section is a
    reference for the full menu of scores and when to use each; the probability calibration

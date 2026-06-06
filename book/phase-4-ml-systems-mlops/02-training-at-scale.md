@@ -45,7 +45,7 @@ By the end of this module you will be able to:
 1. **The single-GPU efficiency techniques: Hugging Face's "Methods and tools for efficient
    training on a single GPU."** Mixed precision, gradient accumulation, gradient checkpointing,
    and optimizer choices, all of which you can run yourself.
-   https://huggingface.co/docs/transformers/en/perf_train_gpu_one
+   https://huggingface.co/docs/transformers/perf_train_gpu_one
 
 2. **Distributed training, conceptually: the Hugging Face Ultra-Scale Playbook.** The current,
    authoritative explanation of how LLMs are trained across GPU clusters, built from thousands of

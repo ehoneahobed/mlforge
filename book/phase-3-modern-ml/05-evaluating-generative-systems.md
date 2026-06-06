@@ -58,7 +58,7 @@ By the end of this module you will be able to:
 
 4. **RAG and task-specific evaluation: RAGAS** (revisited from Module 3.3) for the retrieval
    case, plus the Hugging Face `evaluate` library for standard metrics.
-   https://docs.ragas.io/ and https://huggingface.co/docs/evaluate/
+   https://docs.ragas.io/en/stable/ and https://huggingface.co/docs/evaluate/
 
 **Deliberately skip for now:** building your own crowd-sourced arena, and deep statistical
 treatment of inter-rater agreement. Focus on a credible task-specific suite that combines

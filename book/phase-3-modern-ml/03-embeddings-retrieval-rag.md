@@ -70,11 +70,11 @@ the LLM's prompt as context so it answers from them rather than from memory.
 3. **A conceptual explainer of RAG.** Read a solid overview of the pattern, chunking strategies,
    hybrid search, and reranking, so you understand the choices the framework is making for you.
    The Hugging Face cookbook RAG entries are a good, current source.
-   https://huggingface.co/learn/cookbook/
+   https://huggingface.co/learn/cookbook/index
 
 4. **Evaluation: the RAGAS documentation.** How to measure faithfulness, answer relevance, and
    retrieval quality. Evaluation is the ship gate, so study this properly.
-   https://docs.ragas.io/
+   https://docs.ragas.io/en/stable/
 
 **Deliberately skip for now:** agentic and multi-hop RAG, and heavy production infrastructure.
 Build one solid single-hop RAG system and evaluate it well.
