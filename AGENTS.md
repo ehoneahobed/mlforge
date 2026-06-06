@@ -126,7 +126,10 @@ chapter N / §N), why it's here, and what to deliberately skip. Quality over vol
 items, not 20. For TOOLS and practical machinery (uv, W&B, git, pandas idioms, framework
 setup): do not just link docs. Write a tight inline primer with the mental model, the
 commands or snippet the learner will actually use, and the official docs only as a "go
-deeper" link. See Module 0.2 for the pattern.
+deeper" link. When a module introduces several tools, OPEN with a short overview ("what these
+tools are and how they fit together") that names each tool, the problem it solves, and how
+they connect into one workflow, BEFORE the per-tool primers. Never drop the learner into the
+details of a tool whose purpose they have not first been told. See Module 0.2 for the pattern.
 
 ## Concept checks
 5–10 questions answerable without notes. The honest test of "did it land."

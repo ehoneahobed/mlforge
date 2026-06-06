@@ -46,6 +46,36 @@ By the end of this module you will be able to:
   workflow are.
 - Working knowledge of Git and the command line.
 
+## Your toolkit: what these tools are and how they fit together
+
+Before the details, here is the map, so each tool below has a place to land and you know why
+you are learning it. A machine learning project is a loop, and each tool owns one part of it:
+
+- **An environment manager: `uv`.** Every project needs a specific version of Python and
+  specific versions of its libraries, kept separate so one project does not break another.
+  `uv` creates and locks that environment. You will run almost everything through it. Without
+  something like it, "it worked yesterday" becomes a daily mystery.
+- **The scientific stack: NumPy, pandas, Matplotlib.** The everyday tools for holding and
+  manipulating data (pandas), doing fast math on arrays of numbers (NumPy), and drawing plots
+  (Matplotlib). You will touch these in essentially every module from here on.
+- **A modeling library: scikit-learn.** Ready-made machine learning models you can train in a
+  few lines. This is how you experience machine learning working before you build the
+  internals yourself in later phases.
+- **An experiment tracker: Weights & Biases (or MLflow).** Records which settings produced
+  which results across the many training runs you will do, so you compare runs in a dashboard
+  instead of trusting your memory.
+- **Version control: git and GitHub.** Saves the history of your work and publishes it. Every
+  project you build ships here, and by the end of the curriculum this is your portfolio.
+- **A profiler, when you need it.** Finds the genuinely slow part of your code so you do not
+  waste time optimizing the wrong thing.
+
+Here is how they work together, in one sentence: you create an isolated environment with
+`uv`, load and explore data with the scientific stack, train a model with scikit-learn,
+record the run with your experiment tracker, and version and publish the whole thing to
+GitHub. That loop, in some form, repeats in every project for the rest of the curriculum. The
+rest of this module teaches the pieces you have not already met, starting with the one you
+always set up first: `uv`.
+
 ## uv: the essentials
 
 `uv` is the current default for Python project and environment management: one fast tool
