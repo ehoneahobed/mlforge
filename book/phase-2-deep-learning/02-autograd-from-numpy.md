@@ -169,6 +169,35 @@ Turn the build into a portfolio artifact:
 and the derivation report. Reuse the project template you built in Phase 0 so this is a
 proper, reproducible project, not a loose notebook.
 
+## The workshop: ship it
+
+Build this in its own repository, `mlforge-autograd`, using the project habits from
+Module 0.2. (Start from the provided starter notebook, then package the result.)
+
+1. Set up the project:
+
+```bash
+mkdir mlforge-autograd && cd mlforge-autograd
+uv init && uv add numpy matplotlib torch scikit-learn && mkdir src tests
+```
+
+2. Implement the engine in `src/` (your `Value` class, the operations, `backward`, and the
+   small neural-net library), with the PyTorch gradient check in `tests/`.
+3. Commit at checkpoints: "Value class and operations", then "backward + gradient check
+   passes", then "MLP trains on make_moons".
+4. Add a README and your one-page derivation report (forward and backward for each operation).
+5. Ship it:
+
+```bash
+gh repo create mlforge-autograd --public --source=. --push
+```
+
+   (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
+   `git push -u origin main`.)
+
+**Done when:** `mlforge-autograd` is on GitHub, the gradient check passes, the MLP visibly
+learns, and the README contains your derivations. This is a portfolio centerpiece.
+
 ## Going deeper (optional)
 
 - Extend the engine from scalars to **tensors** using NumPy arrays. This is precisely the

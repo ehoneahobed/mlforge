@@ -122,6 +122,36 @@ Build a reusable, defensible evaluation harness, and use it to expose a problem.
 demonstration with corrected results, and the defensible report. This harness becomes part
 of your standard toolkit for the phase capstone and beyond.
 
+## The workshop: ship it
+
+Build this in its own repository, `mlforge-evaluation-harness`. This is a tool you will reuse
+in later modules, so make it clean.
+
+1. Set up the project:
+
+```bash
+mkdir mlforge-evaluation-harness && cd mlforge-evaluation-harness
+uv init && uv add scikit-learn numpy pandas matplotlib && mkdir src tests notebooks
+```
+
+2. Implement the evaluation harness in `src/` (metrics, ROC and PR curves, confusion matrix,
+   reliability diagram and calibration), then build the leakage demonstration in a notebook.
+3. Commit at checkpoints: "Evaluation harness with tests", then "Leakage demonstration,
+   before and after".
+4. Add a README and your defensible report (metric choice, calibration result, leakage with
+   before-and-after numbers).
+5. Ship it:
+
+```bash
+gh repo create mlforge-evaluation-harness --public --source=. --push
+```
+
+   (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
+   `git push -u origin main`.)
+
+**Done when:** `mlforge-evaluation-harness` is on GitHub, the tests pass, and the README
+documents your leakage demonstration. Reuse this harness in the phase capstone.
+
 ## Going deeper (optional)
 
 - Nested cross-validation, for unbiased performance estimation when you also tune

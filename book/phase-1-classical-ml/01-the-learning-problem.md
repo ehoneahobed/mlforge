@@ -116,6 +116,22 @@ illustrate the bias-variance trade-off concretely on your data.
 **Definition of done:** the brief, plus a single plot or table showing the
 training-versus-validation gap for your two models, with a paragraph interpreting it.
 
+## The workshop: log it
+
+This module is about understanding, not a portfolio build, so it goes in your
+`mlforge-learning-log` repository (from Module 0.1), not a new one.
+
+1. Add a folder `phase-1/01-learning-problem/` containing your brief (`brief.md`) and a small
+   notebook (`bias-variance.ipynb`) that fits the simple and the complex model and plots the
+   train-versus-validation gap.
+2. Commit and push:
+
+```bash
+git add -A && git commit -m "Module 1.1: the learning problem" && git push
+```
+
+**Done when:** the brief and the bias-variance plot are visible in `mlforge-learning-log`.
+
 ## Going deeper (optional)
 
 - ISLP Chapter 5, *Resampling Methods*, for cross-validation and the bootstrap in depth.

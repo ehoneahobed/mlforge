@@ -109,6 +109,35 @@ you observed, including a case where large `gamma` or large `C` clearly overfits
 **Definition of done:** the decision-boundary visualizations, the `C`-and-`gamma` study with
 plots, and the written interpretation connecting what you saw to the concepts.
 
+## The workshop: ship it
+
+This module's deliverable is an empirical study, so it gets its own repository,
+`mlforge-svm-study`.
+
+1. Set up the project:
+
+```bash
+mkdir mlforge-svm-study && cd mlforge-svm-study
+uv init && uv add scikit-learn numpy matplotlib && mkdir notebooks
+```
+
+2. In a notebook, run the study from the project: train linear, polynomial, and RBF kernels
+   on a non-linear dataset, visualize the decision boundaries, then sweep `C` and `gamma` and
+   plot the effects.
+3. Commit at checkpoints: "Kernel comparison with boundaries", then "C and gamma study".
+4. Add a README with your written interpretation, including a clear case of overfitting.
+5. Ship it:
+
+```bash
+gh repo create mlforge-svm-study --public --source=. --push
+```
+
+   (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
+   `git push -u origin main`.)
+
+**Done when:** `mlforge-svm-study` is on GitHub with the boundary visualizations, the
+`C`/`gamma` study, and your interpretation tying what you saw to margins and kernels.
+
 ## Going deeper (optional)
 
 - ESL Chapter 12 for the dual formulation and the optimization behind SVMs.

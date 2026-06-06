@@ -125,6 +125,35 @@ A feature-engineering study on a genuinely messy dataset:
 **Definition of done:** the two pipelines, a fair comparison using leak-free evaluation, and
 a write-up quantifying the value of the feature work and naming the highest-impact decision.
 
+## The workshop: ship it
+
+Build this in its own repository, `mlforge-feature-engineering`.
+
+1. Set up the project:
+
+```bash
+mkdir mlforge-feature-engineering && cd mlforge-feature-engineering
+uv init && uv add pandas scikit-learn imbalanced-learn matplotlib && mkdir src notebooks
+```
+
+2. Build the two pipelines from the project (naive and considered), and compare them with the
+   evaluation harness you built in Module 1.6 (install it or copy it in).
+3. Commit at checkpoints: "Naive pipeline baseline", then "Considered pipeline", then
+   "Fair comparison".
+4. Add a README quantifying how much the feature work moved the honest metric, and which
+   single change mattered most.
+5. Ship it:
+
+```bash
+gh repo create mlforge-feature-engineering --public --source=. --push
+```
+
+   (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
+   `git push -u origin main`.)
+
+**Done when:** `mlforge-feature-engineering` is on GitHub, with the two pipelines, a leak-free
+comparison, and a write-up naming the highest-impact decision.
+
 ## Going deeper (optional)
 
 - Time-based features and the special care temporal data demands.

@@ -210,7 +210,7 @@ print(model.score(X_test, y_test))       # accuracy on unseen data
 That is a complete, if tiny, machine learning project: data in, a trained model, a score on
 data it never saw. Work the official tutorial to understand each step, then make it yours in
 the project below.
-https://scikit-learn.org/stable/tutorial/basic/tutorial.html
+https://scikit-learn.org/stable/getting_started.html
 
 ## Profiling and debugging numerical code
 

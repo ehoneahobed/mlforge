@@ -150,6 +150,35 @@ Turn the build into an artifact, reusing the project template from Module 0.2:
 **Definition of done:** packaged code, passing tests, the derivation-and-regularization
 report, and the interpretation reflection.
 
+## The workshop: ship it
+
+Build this in its own repository, `mlforge-linear-models`, using the project habits from
+Module 0.2.
+
+1. Set up the project:
+
+```bash
+mkdir mlforge-linear-models && cd mlforge-linear-models
+uv init && uv add numpy scikit-learn matplotlib && mkdir src tests
+```
+
+2. Implement the build gate above in `src/` (your `LinearRegression` and
+   `LogisticRegression`), with the gradient check and the scikit-learn comparison in `tests/`.
+3. Commit at checkpoints as you go: "Linear regression + gradient check", then "Logistic
+   regression", then "Regularization study".
+4. Add a README a stranger can follow, plus your one-page derivation report.
+5. Ship it:
+
+```bash
+gh repo create mlforge-linear-models --public --source=. --push
+```
+
+   (No `gh`? Create an empty public repo on github.com, then `git remote add origin <url>`
+   and `git push -u origin main`.)
+
+**Done when:** `mlforge-linear-models` is on GitHub, the tests pass, and the README lets a
+stranger reproduce your results and read your derivations.
+
 ## Going deeper (optional)
 
 - Implement multinomial (softmax) regression, the direct generalization to more than two

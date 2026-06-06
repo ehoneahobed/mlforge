@@ -110,6 +110,35 @@ removes the magic by having you build that step yourself.
 experiment, and the written report including your open questions. Use the project template
 from Phase 0 so it is reproducible.
 
+## The workshop: ship it
+
+Build this in its own repository, `mlforge-first-neural-net`, using the project habits from
+Module 0.2.
+
+1. Set up the project:
+
+```bash
+mkdir mlforge-first-neural-net && cd mlforge-first-neural-net
+uv init && uv add torch torchvision matplotlib && mkdir src
+```
+
+2. Write the model, training loop, and evaluation in `src/`, training on FashionMNIST or
+   CIFAR-10. Plot the training and validation curves.
+3. Commit at checkpoints: "Train a network end to end", then "Plot learning curves", then
+   "One documented experiment".
+4. Add a README with your curves, your experiment, and your three honest open questions.
+5. Ship it:
+
+```bash
+gh repo create mlforge-first-neural-net --public --source=. --push
+```
+
+   (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
+   `git push -u origin main`.)
+
+**Done when:** `mlforge-first-neural-net` is on GitHub with a trained network, plotted curves,
+a documented experiment, and your open questions, which the next module begins to answer.
+
 ## Going deeper (optional)
 
 - Continue Andrej Karpathy's *Neural Networks: Zero to Hero*, which begins exactly where the

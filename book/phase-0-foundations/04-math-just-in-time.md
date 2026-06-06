@@ -143,6 +143,23 @@ watch the one explainer, apply it, and continue. Across the whole curriculum you
 most of the mathematics in this reference, but always in service of a model you are
 building, never as mathematics for its own sake.
 
+## The workshop: log it
+
+There is nothing to ship here, but make your self-assessment real by recording it.
+
+1. In your `mlforge-learning-log` repository (from Module 0.1), add
+   `phase-0/04-math-self-check.md` with your honest answers to the knowledge check above and
+   a short note on which areas, if any, you will warm up using the foundational track before
+   Phase 1.
+2. Commit and push:
+
+```bash
+git add -A && git commit -m "Module 0.4: math self-check" && git push
+```
+
+**Done when:** your self-check is in `mlforge-learning-log`. Revisit it as later modules send
+you back here for specific results.
+
 ## Canonical references
 
 - Deisenroth, Faisal & Ong (2020), *Mathematics for Machine Learning*, Cambridge University

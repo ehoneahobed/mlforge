@@ -133,6 +133,36 @@ An unsupervised exploration of a real, unlabeled (or label-ignored) dataset:
 PCA-plus-clustering and t-SNE/UMAP visualizations, and a written interpretation that treats
 the visualizations with appropriate skepticism.
 
+## The workshop: ship it
+
+Build this in its own repository, `mlforge-unsupervised`, using the project habits from
+Module 0.2.
+
+1. Set up the project:
+
+```bash
+mkdir mlforge-unsupervised && cd mlforge-unsupervised
+uv init && uv add numpy scikit-learn matplotlib && mkdir src tests notebooks
+```
+
+2. Implement the build gate in `src/` (your `KMeans` and `PCA`) with the scikit-learn
+   comparison tests, then do the exploration project in a notebook.
+3. Commit at checkpoints: "k-means from scratch", then "PCA from scratch", then
+   "Exploration and visualizations".
+4. Add a README and your written interpretation, treating the t-SNE/UMAP plots with the
+   skepticism the module taught.
+5. Ship it:
+
+```bash
+gh repo create mlforge-unsupervised --public --source=. --push
+```
+
+   (No `gh`? Create an empty public repo, then `git remote add origin <url>` and
+   `git push -u origin main`.)
+
+**Done when:** `mlforge-unsupervised` is on GitHub, the tests pass, and the README shows your
+clustering and dimensionality-reduction results with an honest interpretation.
+
 ## Going deeper (optional)
 
 - Implement Gaussian mixture models and the expectation-maximization algorithm, a

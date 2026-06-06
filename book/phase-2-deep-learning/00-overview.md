@@ -41,6 +41,6 @@ each used first and then built.
 
 **Capstone 2:** reproduce a published result. Take a small model or a compact training run,
 reproduce it from scratch, and write up where your numbers matched, where they did not, and
-why.
+why. Ship it to its own repository, `mlforge-phase-2-capstone`.
 
 Begin with [Module 2.1](./01-neural-networks-hands-on.md).
